@@ -22,6 +22,10 @@ string filename = "mbr1";
 string filenameread = filename + ".tif";
 string filenametxt = filename + ".txt";
 string filenamewrite = filename + ".jpg";
+
+// cell detection parameters:
+int contoursizelowbound = 5; //defaults: 5
+
 /// Function header
 void thresh_callback(int, void* );
 
@@ -33,32 +37,26 @@ int main( int argc, char** argv )
   cellposn.open ("filenametxt.txt");
   /// Load source image and convert it to gray
   src = imread(IMAGE_PATH+filenameread,CV_LOAD_IMAGE_GRAYSCALE);
-
   //inRange(src, Scalar(0,0,0), Scalar(10,0,0),  src);
-  
+  cout << "Image size:" << src.size() << endl;
   /// Show in a window
   namedWindow( "src", CV_WINDOW_AUTOSIZE );
   imshow( "src", src );
-  src_gray = src.clone();
+  //src_gray = src.clone();
   
   /// Convert image to gray and blur it
   //cvtColor( src, src_gray, CV_BGR2GRAY );
   //threshold( src_gray, src_gray, 112, 255,3 );
   //blur( src_gray, src_gray, Size(3,3) );
   
-  /// Sharpen image
-  /* Mat kernel = (Mat_<float>(3,3) << 
-        0,  -.1, 0,
-        -1, .5, -.1,
-        0,  -1, 0); 
-  filter2D(src, src_gray, -1, kernel); */
-  
-  /// Bilateral filter
-  //bilateralFilter(src, src_gray, 3, 1,1, BORDER_DEFAULT );
+  /// Sharpen image using Bilateral filter
+  int filteridx = 3;
+  bilateralFilter(src, src_gray, filteridx, filteridx*2,filteridx/2, BORDER_DEFAULT );
   
   /// Create Window
   char* source_window = "Source";
   namedWindow( source_window, CV_WINDOW_AUTOSIZE );
+  imshow( "src", src_gray );
   imshow( source_window, src_gray );
   
   createTrackbar( " Canny thresh:", "Source", &thresh, max_thresh, thresh_callback );
@@ -87,20 +85,22 @@ void thresh_callback(int, void* )
   vector<double> size( contours.size() );
   
   for( int i = 0; i < contours.size(); i++ )
-  { minRect[i] = minAreaRect( Mat(contours[i]) );
+  { 
+	minRect[i] = minAreaRect( Mat(contours[i]) );
   
-  if( contours[i].size() > 5 )
-  { minEllipse[i] = fitEllipse( Mat(contours[i]) );
-  cout<< "contour" << endl;
-  Point2f ellipse_points[4]; minEllipse[i].points( ellipse_points );
-  double majorAxis = sqrt(pow(ellipse_points[0].x - ellipse_points[1].x,2) + pow(ellipse_points[0].y - ellipse_points[1].y,2));
-  double minorAxis = sqrt(pow(ellipse_points[0].x - ellipse_points[3].x,2) + pow(ellipse_points[0].y - ellipse_points[3].y,2));
-  ratio[i] = majorAxis/minorAxis;
-  size[i] = majorAxis*minorAxis;
+  	if( contours[i].size() > contoursizelowbound )
+	{ 
+		minEllipse[i] = fitEllipse( Mat(contours[i]) );
+  		cout<< "contour" << endl;
+  		Point2f ellipse_points[4]; minEllipse[i].points( ellipse_points );
+		double majorAxis = sqrt(pow(ellipse_points[0].x - ellipse_points[1].x,2) + pow(ellipse_points[0].y - ellipse_points[1].y,2));
+		double minorAxis = sqrt(pow(ellipse_points[0].x - ellipse_points[3].x,2) + pow(ellipse_points[0].y - ellipse_points[3].y,2));
+		ratio[i] = majorAxis/minorAxis;
+		size[i] = majorAxis*minorAxis;
   
-  //cout<< "ratio = " << ratio[i] << endl; 
-  //cout<< "size = " << size[i] << endl; 
-  }
+	  	//cout<< "ratio = " << ratio[i] << endl; 
+	  	//cout<< "size = " << size[i] << endl; 
+	}
   
   }
   
@@ -170,6 +170,10 @@ void thresh_callback(int, void* )
   namedWindow( "Cells", CV_WINDOW_AUTOSIZE );
   imshow( "Cells", drawingCells );
   
+  imshow( "Source" , canny_output);
+  
+
+
   /// save image;
   imwrite(IMAGE_PATH+filenamewrite, drawingCells);
   cout << "image write complete" << endl;  
