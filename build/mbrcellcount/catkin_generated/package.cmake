@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "mbrcellcount")
+set(mbrcellcount_MAINTAINER "denise <denise@todo.todo>")
+set(mbrcellcount_DEPRECATED "")
+set(mbrcellcount_VERSION "0.0.0")
+set(mbrcellcount_BUILD_DEPENDS "roscpp")
+set(mbrcellcount_RUN_DEPENDS "roscpp")
+set(mbrcellcount_BUILDTOOL_DEPENDS "catkin")

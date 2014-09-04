@@ -1,0 +1,8 @@
+prefix=/home/denise/catkin_ws/install
+
+Name: mbrcellcount
+Description: Description of mbrcellcount
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/denise/catkin_ws/install/lib 
+Requires: 
