@@ -87,7 +87,7 @@ clean: CMakeFiles/clean_test_results.dir/clean
 CMakeFiles/doxygen.dir/all:
 	$(MAKE) -f CMakeFiles/doxygen.dir/build.make CMakeFiles/doxygen.dir/depend
 	$(MAKE) -f CMakeFiles/doxygen.dir/build.make CMakeFiles/doxygen.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/denise/catkin_ws/build/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/denise/catkin_ws/build/CMakeFiles  5
 	@echo "Built target doxygen"
 .PHONY : CMakeFiles/doxygen.dir/all
 
@@ -196,7 +196,7 @@ gtest/preinstall:
 gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/denise/catkin_ws/build/CMakeFiles  2
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/denise/catkin_ws/build/CMakeFiles  10
 	@echo "Built target gtest"
 .PHONY : gtest/CMakeFiles/gtest.dir/all
 
@@ -227,7 +227,7 @@ clean: gtest/CMakeFiles/gtest.dir/clean
 gtest/CMakeFiles/gtest_main.dir/all: gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/denise/catkin_ws/build/CMakeFiles  3
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/denise/catkin_ws/build/CMakeFiles  11
 	@echo "Built target gtest_main"
 .PHONY : gtest/CMakeFiles/gtest_main.dir/all
 
@@ -282,7 +282,7 @@ mbrcellcount/preinstall:
 mbrcellcount/CMakeFiles/regionSelection.dir/all:
 	$(MAKE) -f mbrcellcount/CMakeFiles/regionSelection.dir/build.make mbrcellcount/CMakeFiles/regionSelection.dir/depend
 	$(MAKE) -f mbrcellcount/CMakeFiles/regionSelection.dir/build.make mbrcellcount/CMakeFiles/regionSelection.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/denise/catkin_ws/build/CMakeFiles  4
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/denise/catkin_ws/build/CMakeFiles  16
 	@echo "Built target regionSelection"
 .PHONY : mbrcellcount/CMakeFiles/regionSelection.dir/all
 
@@ -588,6 +588,766 @@ mbrcellcount/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
 # clean rule for target.
 clean: mbrcellcount/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory camera_magnet
+
+# Convenience name for "all" pass in the directory.
+camera_magnet/all: camera_magnet/CMakeFiles/camera_magnet_generate_messages.dir/all
+camera_magnet/all: camera_magnet/CMakeFiles/flea_subscribeimage.dir/all
+camera_magnet/all: camera_magnet/CMakeFiles/image_converter.dir/all
+camera_magnet/all: camera_magnet/CMakeFiles/magnet_track.dir/all
+camera_magnet/all: camera_magnet/CMakeFiles/post_magnetcontourellipse.dir/all
+camera_magnet/all: camera_magnet/CMakeFiles/post_magnettrack_files.dir/all
+.PHONY : camera_magnet/all
+
+# Convenience name for "clean" pass in the directory.
+camera_magnet/clean: camera_magnet/CMakeFiles/camera_magnet_gencpp.dir/clean
+camera_magnet/clean: camera_magnet/CMakeFiles/camera_magnet_generate_messages.dir/clean
+camera_magnet/clean: camera_magnet/CMakeFiles/camera_magnet_generate_messages_cpp.dir/clean
+camera_magnet/clean: camera_magnet/CMakeFiles/camera_magnet_generate_messages_lisp.dir/clean
+camera_magnet/clean: camera_magnet/CMakeFiles/camera_magnet_generate_messages_py.dir/clean
+camera_magnet/clean: camera_magnet/CMakeFiles/camera_magnet_genlisp.dir/clean
+camera_magnet/clean: camera_magnet/CMakeFiles/camera_magnet_genpy.dir/clean
+camera_magnet/clean: camera_magnet/CMakeFiles/flea_subscribeimage.dir/clean
+camera_magnet/clean: camera_magnet/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+camera_magnet/clean: camera_magnet/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+camera_magnet/clean: camera_magnet/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
+camera_magnet/clean: camera_magnet/CMakeFiles/image_converter.dir/clean
+camera_magnet/clean: camera_magnet/CMakeFiles/magnet_track.dir/clean
+camera_magnet/clean: camera_magnet/CMakeFiles/post_magnetcontourellipse.dir/clean
+camera_magnet/clean: camera_magnet/CMakeFiles/post_magnettrack_files.dir/clean
+camera_magnet/clean: camera_magnet/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
+camera_magnet/clean: camera_magnet/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
+camera_magnet/clean: camera_magnet/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
+.PHONY : camera_magnet/clean
+
+# Convenience name for "preinstall" pass in the directory.
+camera_magnet/preinstall:
+.PHONY : camera_magnet/preinstall
+
+#=============================================================================
+# Target rules for target camera_magnet/CMakeFiles/camera_magnet_gencpp.dir
+
+# All Build rule for target.
+camera_magnet/CMakeFiles/camera_magnet_gencpp.dir/all: camera_magnet/CMakeFiles/camera_magnet_generate_messages_cpp.dir/all
+	$(MAKE) -f camera_magnet/CMakeFiles/camera_magnet_gencpp.dir/build.make camera_magnet/CMakeFiles/camera_magnet_gencpp.dir/depend
+	$(MAKE) -f camera_magnet/CMakeFiles/camera_magnet_gencpp.dir/build.make camera_magnet/CMakeFiles/camera_magnet_gencpp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/denise/catkin_ws/build/CMakeFiles 
+	@echo "Built target camera_magnet_gencpp"
+.PHONY : camera_magnet/CMakeFiles/camera_magnet_gencpp.dir/all
+
+# Build rule for subdir invocation for target.
+camera_magnet/CMakeFiles/camera_magnet_gencpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/denise/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 camera_magnet/CMakeFiles/camera_magnet_gencpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/denise/catkin_ws/build/CMakeFiles 0
+.PHONY : camera_magnet/CMakeFiles/camera_magnet_gencpp.dir/rule
+
+# Convenience name for target.
+camera_magnet_gencpp: camera_magnet/CMakeFiles/camera_magnet_gencpp.dir/rule
+.PHONY : camera_magnet_gencpp
+
+# clean rule for target.
+camera_magnet/CMakeFiles/camera_magnet_gencpp.dir/clean:
+	$(MAKE) -f camera_magnet/CMakeFiles/camera_magnet_gencpp.dir/build.make camera_magnet/CMakeFiles/camera_magnet_gencpp.dir/clean
+.PHONY : camera_magnet/CMakeFiles/camera_magnet_gencpp.dir/clean
+
+# clean rule for target.
+clean: camera_magnet/CMakeFiles/camera_magnet_gencpp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target camera_magnet/CMakeFiles/camera_magnet_generate_messages.dir
+
+# All Build rule for target.
+camera_magnet/CMakeFiles/camera_magnet_generate_messages.dir/all: camera_magnet/CMakeFiles/camera_magnet_generate_messages_cpp.dir/all
+camera_magnet/CMakeFiles/camera_magnet_generate_messages.dir/all: camera_magnet/CMakeFiles/camera_magnet_generate_messages_lisp.dir/all
+camera_magnet/CMakeFiles/camera_magnet_generate_messages.dir/all: camera_magnet/CMakeFiles/camera_magnet_generate_messages_py.dir/all
+	$(MAKE) -f camera_magnet/CMakeFiles/camera_magnet_generate_messages.dir/build.make camera_magnet/CMakeFiles/camera_magnet_generate_messages.dir/depend
+	$(MAKE) -f camera_magnet/CMakeFiles/camera_magnet_generate_messages.dir/build.make camera_magnet/CMakeFiles/camera_magnet_generate_messages.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/denise/catkin_ws/build/CMakeFiles 
+	@echo "Built target camera_magnet_generate_messages"
+.PHONY : camera_magnet/CMakeFiles/camera_magnet_generate_messages.dir/all
+
+# Include target in all.
+all: camera_magnet/CMakeFiles/camera_magnet_generate_messages.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+camera_magnet/CMakeFiles/camera_magnet_generate_messages.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/denise/catkin_ws/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 camera_magnet/CMakeFiles/camera_magnet_generate_messages.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/denise/catkin_ws/build/CMakeFiles 0
+.PHONY : camera_magnet/CMakeFiles/camera_magnet_generate_messages.dir/rule
+
+# Convenience name for target.
+camera_magnet_generate_messages: camera_magnet/CMakeFiles/camera_magnet_generate_messages.dir/rule
+.PHONY : camera_magnet_generate_messages
+
+# clean rule for target.
+camera_magnet/CMakeFiles/camera_magnet_generate_messages.dir/clean:
+	$(MAKE) -f camera_magnet/CMakeFiles/camera_magnet_generate_messages.dir/build.make camera_magnet/CMakeFiles/camera_magnet_generate_messages.dir/clean
+.PHONY : camera_magnet/CMakeFiles/camera_magnet_generate_messages.dir/clean
+
+# clean rule for target.
+clean: camera_magnet/CMakeFiles/camera_magnet_generate_messages.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target camera_magnet/CMakeFiles/camera_magnet_generate_messages_cpp.dir
+
+# All Build rule for target.
+camera_magnet/CMakeFiles/camera_magnet_generate_messages_cpp.dir/all: mbrcellcount/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+	$(MAKE) -f camera_magnet/CMakeFiles/camera_magnet_generate_messages_cpp.dir/build.make camera_magnet/CMakeFiles/camera_magnet_generate_messages_cpp.dir/depend
+	$(MAKE) -f camera_magnet/CMakeFiles/camera_magnet_generate_messages_cpp.dir/build.make camera_magnet/CMakeFiles/camera_magnet_generate_messages_cpp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/denise/catkin_ws/build/CMakeFiles  1
+	@echo "Built target camera_magnet_generate_messages_cpp"
+.PHONY : camera_magnet/CMakeFiles/camera_magnet_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+camera_magnet/CMakeFiles/camera_magnet_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/denise/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 camera_magnet/CMakeFiles/camera_magnet_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/denise/catkin_ws/build/CMakeFiles 0
+.PHONY : camera_magnet/CMakeFiles/camera_magnet_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+camera_magnet_generate_messages_cpp: camera_magnet/CMakeFiles/camera_magnet_generate_messages_cpp.dir/rule
+.PHONY : camera_magnet_generate_messages_cpp
+
+# clean rule for target.
+camera_magnet/CMakeFiles/camera_magnet_generate_messages_cpp.dir/clean:
+	$(MAKE) -f camera_magnet/CMakeFiles/camera_magnet_generate_messages_cpp.dir/build.make camera_magnet/CMakeFiles/camera_magnet_generate_messages_cpp.dir/clean
+.PHONY : camera_magnet/CMakeFiles/camera_magnet_generate_messages_cpp.dir/clean
+
+# clean rule for target.
+clean: camera_magnet/CMakeFiles/camera_magnet_generate_messages_cpp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target camera_magnet/CMakeFiles/camera_magnet_generate_messages_lisp.dir
+
+# All Build rule for target.
+camera_magnet/CMakeFiles/camera_magnet_generate_messages_lisp.dir/all: mbrcellcount/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+	$(MAKE) -f camera_magnet/CMakeFiles/camera_magnet_generate_messages_lisp.dir/build.make camera_magnet/CMakeFiles/camera_magnet_generate_messages_lisp.dir/depend
+	$(MAKE) -f camera_magnet/CMakeFiles/camera_magnet_generate_messages_lisp.dir/build.make camera_magnet/CMakeFiles/camera_magnet_generate_messages_lisp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/denise/catkin_ws/build/CMakeFiles  2
+	@echo "Built target camera_magnet_generate_messages_lisp"
+.PHONY : camera_magnet/CMakeFiles/camera_magnet_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+camera_magnet/CMakeFiles/camera_magnet_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/denise/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 camera_magnet/CMakeFiles/camera_magnet_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/denise/catkin_ws/build/CMakeFiles 0
+.PHONY : camera_magnet/CMakeFiles/camera_magnet_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+camera_magnet_generate_messages_lisp: camera_magnet/CMakeFiles/camera_magnet_generate_messages_lisp.dir/rule
+.PHONY : camera_magnet_generate_messages_lisp
+
+# clean rule for target.
+camera_magnet/CMakeFiles/camera_magnet_generate_messages_lisp.dir/clean:
+	$(MAKE) -f camera_magnet/CMakeFiles/camera_magnet_generate_messages_lisp.dir/build.make camera_magnet/CMakeFiles/camera_magnet_generate_messages_lisp.dir/clean
+.PHONY : camera_magnet/CMakeFiles/camera_magnet_generate_messages_lisp.dir/clean
+
+# clean rule for target.
+clean: camera_magnet/CMakeFiles/camera_magnet_generate_messages_lisp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target camera_magnet/CMakeFiles/camera_magnet_generate_messages_py.dir
+
+# All Build rule for target.
+camera_magnet/CMakeFiles/camera_magnet_generate_messages_py.dir/all: mbrcellcount/CMakeFiles/std_msgs_generate_messages_py.dir/all
+	$(MAKE) -f camera_magnet/CMakeFiles/camera_magnet_generate_messages_py.dir/build.make camera_magnet/CMakeFiles/camera_magnet_generate_messages_py.dir/depend
+	$(MAKE) -f camera_magnet/CMakeFiles/camera_magnet_generate_messages_py.dir/build.make camera_magnet/CMakeFiles/camera_magnet_generate_messages_py.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/denise/catkin_ws/build/CMakeFiles  3 4
+	@echo "Built target camera_magnet_generate_messages_py"
+.PHONY : camera_magnet/CMakeFiles/camera_magnet_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+camera_magnet/CMakeFiles/camera_magnet_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/denise/catkin_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 camera_magnet/CMakeFiles/camera_magnet_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/denise/catkin_ws/build/CMakeFiles 0
+.PHONY : camera_magnet/CMakeFiles/camera_magnet_generate_messages_py.dir/rule
+
+# Convenience name for target.
+camera_magnet_generate_messages_py: camera_magnet/CMakeFiles/camera_magnet_generate_messages_py.dir/rule
+.PHONY : camera_magnet_generate_messages_py
+
+# clean rule for target.
+camera_magnet/CMakeFiles/camera_magnet_generate_messages_py.dir/clean:
+	$(MAKE) -f camera_magnet/CMakeFiles/camera_magnet_generate_messages_py.dir/build.make camera_magnet/CMakeFiles/camera_magnet_generate_messages_py.dir/clean
+.PHONY : camera_magnet/CMakeFiles/camera_magnet_generate_messages_py.dir/clean
+
+# clean rule for target.
+clean: camera_magnet/CMakeFiles/camera_magnet_generate_messages_py.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target camera_magnet/CMakeFiles/camera_magnet_genlisp.dir
+
+# All Build rule for target.
+camera_magnet/CMakeFiles/camera_magnet_genlisp.dir/all: camera_magnet/CMakeFiles/camera_magnet_generate_messages_lisp.dir/all
+	$(MAKE) -f camera_magnet/CMakeFiles/camera_magnet_genlisp.dir/build.make camera_magnet/CMakeFiles/camera_magnet_genlisp.dir/depend
+	$(MAKE) -f camera_magnet/CMakeFiles/camera_magnet_genlisp.dir/build.make camera_magnet/CMakeFiles/camera_magnet_genlisp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/denise/catkin_ws/build/CMakeFiles 
+	@echo "Built target camera_magnet_genlisp"
+.PHONY : camera_magnet/CMakeFiles/camera_magnet_genlisp.dir/all
+
+# Build rule for subdir invocation for target.
+camera_magnet/CMakeFiles/camera_magnet_genlisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/denise/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 camera_magnet/CMakeFiles/camera_magnet_genlisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/denise/catkin_ws/build/CMakeFiles 0
+.PHONY : camera_magnet/CMakeFiles/camera_magnet_genlisp.dir/rule
+
+# Convenience name for target.
+camera_magnet_genlisp: camera_magnet/CMakeFiles/camera_magnet_genlisp.dir/rule
+.PHONY : camera_magnet_genlisp
+
+# clean rule for target.
+camera_magnet/CMakeFiles/camera_magnet_genlisp.dir/clean:
+	$(MAKE) -f camera_magnet/CMakeFiles/camera_magnet_genlisp.dir/build.make camera_magnet/CMakeFiles/camera_magnet_genlisp.dir/clean
+.PHONY : camera_magnet/CMakeFiles/camera_magnet_genlisp.dir/clean
+
+# clean rule for target.
+clean: camera_magnet/CMakeFiles/camera_magnet_genlisp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target camera_magnet/CMakeFiles/camera_magnet_genpy.dir
+
+# All Build rule for target.
+camera_magnet/CMakeFiles/camera_magnet_genpy.dir/all: camera_magnet/CMakeFiles/camera_magnet_generate_messages_py.dir/all
+	$(MAKE) -f camera_magnet/CMakeFiles/camera_magnet_genpy.dir/build.make camera_magnet/CMakeFiles/camera_magnet_genpy.dir/depend
+	$(MAKE) -f camera_magnet/CMakeFiles/camera_magnet_genpy.dir/build.make camera_magnet/CMakeFiles/camera_magnet_genpy.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/denise/catkin_ws/build/CMakeFiles 
+	@echo "Built target camera_magnet_genpy"
+.PHONY : camera_magnet/CMakeFiles/camera_magnet_genpy.dir/all
+
+# Build rule for subdir invocation for target.
+camera_magnet/CMakeFiles/camera_magnet_genpy.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/denise/catkin_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 camera_magnet/CMakeFiles/camera_magnet_genpy.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/denise/catkin_ws/build/CMakeFiles 0
+.PHONY : camera_magnet/CMakeFiles/camera_magnet_genpy.dir/rule
+
+# Convenience name for target.
+camera_magnet_genpy: camera_magnet/CMakeFiles/camera_magnet_genpy.dir/rule
+.PHONY : camera_magnet_genpy
+
+# clean rule for target.
+camera_magnet/CMakeFiles/camera_magnet_genpy.dir/clean:
+	$(MAKE) -f camera_magnet/CMakeFiles/camera_magnet_genpy.dir/build.make camera_magnet/CMakeFiles/camera_magnet_genpy.dir/clean
+.PHONY : camera_magnet/CMakeFiles/camera_magnet_genpy.dir/clean
+
+# clean rule for target.
+clean: camera_magnet/CMakeFiles/camera_magnet_genpy.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target camera_magnet/CMakeFiles/flea_subscribeimage.dir
+
+# All Build rule for target.
+camera_magnet/CMakeFiles/flea_subscribeimage.dir/all:
+	$(MAKE) -f camera_magnet/CMakeFiles/flea_subscribeimage.dir/build.make camera_magnet/CMakeFiles/flea_subscribeimage.dir/depend
+	$(MAKE) -f camera_magnet/CMakeFiles/flea_subscribeimage.dir/build.make camera_magnet/CMakeFiles/flea_subscribeimage.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/denise/catkin_ws/build/CMakeFiles  9
+	@echo "Built target flea_subscribeimage"
+.PHONY : camera_magnet/CMakeFiles/flea_subscribeimage.dir/all
+
+# Include target in all.
+all: camera_magnet/CMakeFiles/flea_subscribeimage.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+camera_magnet/CMakeFiles/flea_subscribeimage.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/denise/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 camera_magnet/CMakeFiles/flea_subscribeimage.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/denise/catkin_ws/build/CMakeFiles 0
+.PHONY : camera_magnet/CMakeFiles/flea_subscribeimage.dir/rule
+
+# Convenience name for target.
+flea_subscribeimage: camera_magnet/CMakeFiles/flea_subscribeimage.dir/rule
+.PHONY : flea_subscribeimage
+
+# clean rule for target.
+camera_magnet/CMakeFiles/flea_subscribeimage.dir/clean:
+	$(MAKE) -f camera_magnet/CMakeFiles/flea_subscribeimage.dir/build.make camera_magnet/CMakeFiles/flea_subscribeimage.dir/clean
+.PHONY : camera_magnet/CMakeFiles/flea_subscribeimage.dir/clean
+
+# clean rule for target.
+clean: camera_magnet/CMakeFiles/flea_subscribeimage.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target camera_magnet/CMakeFiles/geometry_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+camera_magnet/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f camera_magnet/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make camera_magnet/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f camera_magnet/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make camera_magnet/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/denise/catkin_ws/build/CMakeFiles 
+	@echo "Built target geometry_msgs_generate_messages_cpp"
+.PHONY : camera_magnet/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+camera_magnet/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/denise/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 camera_magnet/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/denise/catkin_ws/build/CMakeFiles 0
+.PHONY : camera_magnet/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_cpp: camera_magnet/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+.PHONY : geometry_msgs_generate_messages_cpp
+
+# clean rule for target.
+camera_magnet/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f camera_magnet/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make camera_magnet/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+.PHONY : camera_magnet/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+
+# clean rule for target.
+clean: camera_magnet/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target camera_magnet/CMakeFiles/geometry_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+camera_magnet/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f camera_magnet/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make camera_magnet/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f camera_magnet/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make camera_magnet/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/denise/catkin_ws/build/CMakeFiles 
+	@echo "Built target geometry_msgs_generate_messages_lisp"
+.PHONY : camera_magnet/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+camera_magnet/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/denise/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 camera_magnet/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/denise/catkin_ws/build/CMakeFiles 0
+.PHONY : camera_magnet/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_lisp: camera_magnet/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+.PHONY : geometry_msgs_generate_messages_lisp
+
+# clean rule for target.
+camera_magnet/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f camera_magnet/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make camera_magnet/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+.PHONY : camera_magnet/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+
+# clean rule for target.
+clean: camera_magnet/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target camera_magnet/CMakeFiles/geometry_msgs_generate_messages_py.dir
+
+# All Build rule for target.
+camera_magnet/CMakeFiles/geometry_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f camera_magnet/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make camera_magnet/CMakeFiles/geometry_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f camera_magnet/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make camera_magnet/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/denise/catkin_ws/build/CMakeFiles 
+	@echo "Built target geometry_msgs_generate_messages_py"
+.PHONY : camera_magnet/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+camera_magnet/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/denise/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 camera_magnet/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/denise/catkin_ws/build/CMakeFiles 0
+.PHONY : camera_magnet/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_py: camera_magnet/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+.PHONY : geometry_msgs_generate_messages_py
+
+# clean rule for target.
+camera_magnet/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f camera_magnet/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make camera_magnet/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
+.PHONY : camera_magnet/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
+
+# clean rule for target.
+clean: camera_magnet/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target camera_magnet/CMakeFiles/image_converter.dir
+
+# All Build rule for target.
+camera_magnet/CMakeFiles/image_converter.dir/all:
+	$(MAKE) -f camera_magnet/CMakeFiles/image_converter.dir/build.make camera_magnet/CMakeFiles/image_converter.dir/depend
+	$(MAKE) -f camera_magnet/CMakeFiles/image_converter.dir/build.make camera_magnet/CMakeFiles/image_converter.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/denise/catkin_ws/build/CMakeFiles  12
+	@echo "Built target image_converter"
+.PHONY : camera_magnet/CMakeFiles/image_converter.dir/all
+
+# Include target in all.
+all: camera_magnet/CMakeFiles/image_converter.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+camera_magnet/CMakeFiles/image_converter.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/denise/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 camera_magnet/CMakeFiles/image_converter.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/denise/catkin_ws/build/CMakeFiles 0
+.PHONY : camera_magnet/CMakeFiles/image_converter.dir/rule
+
+# Convenience name for target.
+image_converter: camera_magnet/CMakeFiles/image_converter.dir/rule
+.PHONY : image_converter
+
+# clean rule for target.
+camera_magnet/CMakeFiles/image_converter.dir/clean:
+	$(MAKE) -f camera_magnet/CMakeFiles/image_converter.dir/build.make camera_magnet/CMakeFiles/image_converter.dir/clean
+.PHONY : camera_magnet/CMakeFiles/image_converter.dir/clean
+
+# clean rule for target.
+clean: camera_magnet/CMakeFiles/image_converter.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target camera_magnet/CMakeFiles/magnet_track.dir
+
+# All Build rule for target.
+camera_magnet/CMakeFiles/magnet_track.dir/all:
+	$(MAKE) -f camera_magnet/CMakeFiles/magnet_track.dir/build.make camera_magnet/CMakeFiles/magnet_track.dir/depend
+	$(MAKE) -f camera_magnet/CMakeFiles/magnet_track.dir/build.make camera_magnet/CMakeFiles/magnet_track.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/denise/catkin_ws/build/CMakeFiles  13
+	@echo "Built target magnet_track"
+.PHONY : camera_magnet/CMakeFiles/magnet_track.dir/all
+
+# Include target in all.
+all: camera_magnet/CMakeFiles/magnet_track.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+camera_magnet/CMakeFiles/magnet_track.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/denise/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 camera_magnet/CMakeFiles/magnet_track.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/denise/catkin_ws/build/CMakeFiles 0
+.PHONY : camera_magnet/CMakeFiles/magnet_track.dir/rule
+
+# Convenience name for target.
+magnet_track: camera_magnet/CMakeFiles/magnet_track.dir/rule
+.PHONY : magnet_track
+
+# clean rule for target.
+camera_magnet/CMakeFiles/magnet_track.dir/clean:
+	$(MAKE) -f camera_magnet/CMakeFiles/magnet_track.dir/build.make camera_magnet/CMakeFiles/magnet_track.dir/clean
+.PHONY : camera_magnet/CMakeFiles/magnet_track.dir/clean
+
+# clean rule for target.
+clean: camera_magnet/CMakeFiles/magnet_track.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target camera_magnet/CMakeFiles/post_magnetcontourellipse.dir
+
+# All Build rule for target.
+camera_magnet/CMakeFiles/post_magnetcontourellipse.dir/all:
+	$(MAKE) -f camera_magnet/CMakeFiles/post_magnetcontourellipse.dir/build.make camera_magnet/CMakeFiles/post_magnetcontourellipse.dir/depend
+	$(MAKE) -f camera_magnet/CMakeFiles/post_magnetcontourellipse.dir/build.make camera_magnet/CMakeFiles/post_magnetcontourellipse.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/denise/catkin_ws/build/CMakeFiles  14
+	@echo "Built target post_magnetcontourellipse"
+.PHONY : camera_magnet/CMakeFiles/post_magnetcontourellipse.dir/all
+
+# Include target in all.
+all: camera_magnet/CMakeFiles/post_magnetcontourellipse.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+camera_magnet/CMakeFiles/post_magnetcontourellipse.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/denise/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 camera_magnet/CMakeFiles/post_magnetcontourellipse.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/denise/catkin_ws/build/CMakeFiles 0
+.PHONY : camera_magnet/CMakeFiles/post_magnetcontourellipse.dir/rule
+
+# Convenience name for target.
+post_magnetcontourellipse: camera_magnet/CMakeFiles/post_magnetcontourellipse.dir/rule
+.PHONY : post_magnetcontourellipse
+
+# clean rule for target.
+camera_magnet/CMakeFiles/post_magnetcontourellipse.dir/clean:
+	$(MAKE) -f camera_magnet/CMakeFiles/post_magnetcontourellipse.dir/build.make camera_magnet/CMakeFiles/post_magnetcontourellipse.dir/clean
+.PHONY : camera_magnet/CMakeFiles/post_magnetcontourellipse.dir/clean
+
+# clean rule for target.
+clean: camera_magnet/CMakeFiles/post_magnetcontourellipse.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target camera_magnet/CMakeFiles/post_magnettrack_files.dir
+
+# All Build rule for target.
+camera_magnet/CMakeFiles/post_magnettrack_files.dir/all:
+	$(MAKE) -f camera_magnet/CMakeFiles/post_magnettrack_files.dir/build.make camera_magnet/CMakeFiles/post_magnettrack_files.dir/depend
+	$(MAKE) -f camera_magnet/CMakeFiles/post_magnettrack_files.dir/build.make camera_magnet/CMakeFiles/post_magnettrack_files.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/denise/catkin_ws/build/CMakeFiles  15
+	@echo "Built target post_magnettrack_files"
+.PHONY : camera_magnet/CMakeFiles/post_magnettrack_files.dir/all
+
+# Include target in all.
+all: camera_magnet/CMakeFiles/post_magnettrack_files.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+camera_magnet/CMakeFiles/post_magnettrack_files.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/denise/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 camera_magnet/CMakeFiles/post_magnettrack_files.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/denise/catkin_ws/build/CMakeFiles 0
+.PHONY : camera_magnet/CMakeFiles/post_magnettrack_files.dir/rule
+
+# Convenience name for target.
+post_magnettrack_files: camera_magnet/CMakeFiles/post_magnettrack_files.dir/rule
+.PHONY : post_magnettrack_files
+
+# clean rule for target.
+camera_magnet/CMakeFiles/post_magnettrack_files.dir/clean:
+	$(MAKE) -f camera_magnet/CMakeFiles/post_magnettrack_files.dir/build.make camera_magnet/CMakeFiles/post_magnettrack_files.dir/clean
+.PHONY : camera_magnet/CMakeFiles/post_magnettrack_files.dir/clean
+
+# clean rule for target.
+clean: camera_magnet/CMakeFiles/post_magnettrack_files.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target camera_magnet/CMakeFiles/sensor_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+camera_magnet/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f camera_magnet/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make camera_magnet/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f camera_magnet/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make camera_magnet/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/denise/catkin_ws/build/CMakeFiles 
+	@echo "Built target sensor_msgs_generate_messages_cpp"
+.PHONY : camera_magnet/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+camera_magnet/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/denise/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 camera_magnet/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/denise/catkin_ws/build/CMakeFiles 0
+.PHONY : camera_magnet/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_cpp: camera_magnet/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+.PHONY : sensor_msgs_generate_messages_cpp
+
+# clean rule for target.
+camera_magnet/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f camera_magnet/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make camera_magnet/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
+.PHONY : camera_magnet/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
+
+# clean rule for target.
+clean: camera_magnet/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target camera_magnet/CMakeFiles/sensor_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+camera_magnet/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f camera_magnet/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make camera_magnet/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f camera_magnet/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make camera_magnet/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/denise/catkin_ws/build/CMakeFiles 
+	@echo "Built target sensor_msgs_generate_messages_lisp"
+.PHONY : camera_magnet/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+camera_magnet/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/denise/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 camera_magnet/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/denise/catkin_ws/build/CMakeFiles 0
+.PHONY : camera_magnet/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_lisp: camera_magnet/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+.PHONY : sensor_msgs_generate_messages_lisp
+
+# clean rule for target.
+camera_magnet/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f camera_magnet/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make camera_magnet/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
+.PHONY : camera_magnet/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
+
+# clean rule for target.
+clean: camera_magnet/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target camera_magnet/CMakeFiles/sensor_msgs_generate_messages_py.dir
+
+# All Build rule for target.
+camera_magnet/CMakeFiles/sensor_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f camera_magnet/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make camera_magnet/CMakeFiles/sensor_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f camera_magnet/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make camera_magnet/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/denise/catkin_ws/build/CMakeFiles 
+	@echo "Built target sensor_msgs_generate_messages_py"
+.PHONY : camera_magnet/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+camera_magnet/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/denise/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 camera_magnet/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/denise/catkin_ws/build/CMakeFiles 0
+.PHONY : camera_magnet/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_py: camera_magnet/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+.PHONY : sensor_msgs_generate_messages_py
+
+# clean rule for target.
+camera_magnet/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f camera_magnet/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make camera_magnet/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
+.PHONY : camera_magnet/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
+
+# clean rule for target.
+clean: camera_magnet/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory flea_ros
+
+# Convenience name for "all" pass in the directory.
+flea_ros/all: flea_ros/CMakeFiles/flea.dir/all
+flea_ros/all: flea_ros/CMakeFiles/flea_ros_color_server.dir/all
+flea_ros/all: flea_ros/CMakeFiles/flea_ros_server.dir/all
+.PHONY : flea_ros/all
+
+# Convenience name for "clean" pass in the directory.
+flea_ros/clean: flea_ros/CMakeFiles/flea.dir/clean
+flea_ros/clean: flea_ros/CMakeFiles/flea_ros_color_server.dir/clean
+flea_ros/clean: flea_ros/CMakeFiles/flea_ros_server.dir/clean
+.PHONY : flea_ros/clean
+
+# Convenience name for "preinstall" pass in the directory.
+flea_ros/preinstall:
+.PHONY : flea_ros/preinstall
+
+#=============================================================================
+# Target rules for target flea_ros/CMakeFiles/flea.dir
+
+# All Build rule for target.
+flea_ros/CMakeFiles/flea.dir/all:
+	$(MAKE) -f flea_ros/CMakeFiles/flea.dir/build.make flea_ros/CMakeFiles/flea.dir/depend
+	$(MAKE) -f flea_ros/CMakeFiles/flea.dir/build.make flea_ros/CMakeFiles/flea.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/denise/catkin_ws/build/CMakeFiles  6
+	@echo "Built target flea"
+.PHONY : flea_ros/CMakeFiles/flea.dir/all
+
+# Include target in all.
+all: flea_ros/CMakeFiles/flea.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+flea_ros/CMakeFiles/flea.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/denise/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 flea_ros/CMakeFiles/flea.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/denise/catkin_ws/build/CMakeFiles 0
+.PHONY : flea_ros/CMakeFiles/flea.dir/rule
+
+# Convenience name for target.
+flea: flea_ros/CMakeFiles/flea.dir/rule
+.PHONY : flea
+
+# clean rule for target.
+flea_ros/CMakeFiles/flea.dir/clean:
+	$(MAKE) -f flea_ros/CMakeFiles/flea.dir/build.make flea_ros/CMakeFiles/flea.dir/clean
+.PHONY : flea_ros/CMakeFiles/flea.dir/clean
+
+# clean rule for target.
+clean: flea_ros/CMakeFiles/flea.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target flea_ros/CMakeFiles/flea_ros_color_server.dir
+
+# All Build rule for target.
+flea_ros/CMakeFiles/flea_ros_color_server.dir/all:
+	$(MAKE) -f flea_ros/CMakeFiles/flea_ros_color_server.dir/build.make flea_ros/CMakeFiles/flea_ros_color_server.dir/depend
+	$(MAKE) -f flea_ros/CMakeFiles/flea_ros_color_server.dir/build.make flea_ros/CMakeFiles/flea_ros_color_server.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/denise/catkin_ws/build/CMakeFiles  7
+	@echo "Built target flea_ros_color_server"
+.PHONY : flea_ros/CMakeFiles/flea_ros_color_server.dir/all
+
+# Include target in all.
+all: flea_ros/CMakeFiles/flea_ros_color_server.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+flea_ros/CMakeFiles/flea_ros_color_server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/denise/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 flea_ros/CMakeFiles/flea_ros_color_server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/denise/catkin_ws/build/CMakeFiles 0
+.PHONY : flea_ros/CMakeFiles/flea_ros_color_server.dir/rule
+
+# Convenience name for target.
+flea_ros_color_server: flea_ros/CMakeFiles/flea_ros_color_server.dir/rule
+.PHONY : flea_ros_color_server
+
+# clean rule for target.
+flea_ros/CMakeFiles/flea_ros_color_server.dir/clean:
+	$(MAKE) -f flea_ros/CMakeFiles/flea_ros_color_server.dir/build.make flea_ros/CMakeFiles/flea_ros_color_server.dir/clean
+.PHONY : flea_ros/CMakeFiles/flea_ros_color_server.dir/clean
+
+# clean rule for target.
+clean: flea_ros/CMakeFiles/flea_ros_color_server.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target flea_ros/CMakeFiles/flea_ros_server.dir
+
+# All Build rule for target.
+flea_ros/CMakeFiles/flea_ros_server.dir/all: flea_ros/CMakeFiles/flea.dir/all
+	$(MAKE) -f flea_ros/CMakeFiles/flea_ros_server.dir/build.make flea_ros/CMakeFiles/flea_ros_server.dir/depend
+	$(MAKE) -f flea_ros/CMakeFiles/flea_ros_server.dir/build.make flea_ros/CMakeFiles/flea_ros_server.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/denise/catkin_ws/build/CMakeFiles  8
+	@echo "Built target flea_ros_server"
+.PHONY : flea_ros/CMakeFiles/flea_ros_server.dir/all
+
+# Include target in all.
+all: flea_ros/CMakeFiles/flea_ros_server.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+flea_ros/CMakeFiles/flea_ros_server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/denise/catkin_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 flea_ros/CMakeFiles/flea_ros_server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/denise/catkin_ws/build/CMakeFiles 0
+.PHONY : flea_ros/CMakeFiles/flea_ros_server.dir/rule
+
+# Convenience name for target.
+flea_ros_server: flea_ros/CMakeFiles/flea_ros_server.dir/rule
+.PHONY : flea_ros_server
+
+# clean rule for target.
+flea_ros/CMakeFiles/flea_ros_server.dir/clean:
+	$(MAKE) -f flea_ros/CMakeFiles/flea_ros_server.dir/build.make flea_ros/CMakeFiles/flea_ros_server.dir/clean
+.PHONY : flea_ros/CMakeFiles/flea_ros_server.dir/clean
+
+# clean rule for target.
+clean: flea_ros/CMakeFiles/flea_ros_server.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory serialroboclaw
+
+# Convenience name for "all" pass in the directory.
+serialroboclaw/all:
+.PHONY : serialroboclaw/all
+
+# Convenience name for "clean" pass in the directory.
+serialroboclaw/clean:
+.PHONY : serialroboclaw/clean
+
+# Convenience name for "preinstall" pass in the directory.
+serialroboclaw/preinstall:
+.PHONY : serialroboclaw/preinstall
 
 #=============================================================================
 # Special targets to cleanup operation of make.

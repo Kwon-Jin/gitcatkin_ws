@@ -37,7 +37,7 @@ CMAKE_AR:FILEPATH=/usr/bin/ar
 
 //Choose the type of build, options are: None(CMAKE_CXX_FLAGS or
 // CMAKE_C_FLAGS used) Debug Release RelWithDebInfo MinSizeRel.
-CMAKE_BUILD_TYPE:STRING=
+CMAKE_BUILD_TYPE:STRING=Debug
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
@@ -249,11 +249,52 @@ _CATKIN_GTEST_INCLUDE:FILEPATH=/usr/include/gtest/gtest.h
 //Path to a file.
 _CATKIN_GTEST_SRC:FILEPATH=/usr/src/gtest/src/gtest.cc
 
+//Value Computed by CMake
+camera_magnet_BINARY_DIR:STATIC=/home/denise/catkin_ws/build/camera_magnet
+
+//Value Computed by CMake
+camera_magnet_SOURCE_DIR:STATIC=/home/denise/catkin_ws/src/camera_magnet
+
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/hydro/share/catkin/cmake
 
+//The directory containing a CMake configuration file for class_loader.
+class_loader_DIR:PATH=/opt/ros/hydro/share/class_loader/cmake
+
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/hydro/share/cpp_common/cmake
+
+//The directory containing a CMake configuration file for cv_bridge.
+cv_bridge_DIR:PATH=/opt/ros/hydro/share/cv_bridge/cmake
+
+//Dependencies for the target
+flea_LIB_DEPENDS:STATIC=general;/opt/ros/hydro/lib/libcv_bridge.so;general;/opt/ros/hydro/lib/libopencv_videostab.so.2.4.9;general;/opt/ros/hydro/lib/libopencv_video.so.2.4.9;general;/opt/ros/hydro/lib/libopencv_superres.so.2.4.9;general;/opt/ros/hydro/lib/libopencv_stitching.so.2.4.9;general;/opt/ros/hydro/lib/libopencv_photo.so.2.4.9;general;/opt/ros/hydro/lib/libopencv_ocl.so.2.4.9;general;/opt/ros/hydro/lib/libopencv_objdetect.so.2.4.9;general;/opt/ros/hydro/lib/libopencv_nonfree.so.2.4.9;general;/opt/ros/hydro/lib/libopencv_ml.so.2.4.9;general;/opt/ros/hydro/lib/libopencv_legacy.so.2.4.9;general;/opt/ros/hydro/lib/libopencv_imgproc.so.2.4.9;general;/opt/ros/hydro/lib/libopencv_highgui.so.2.4.9;general;/opt/ros/hydro/lib/libopencv_gpu.so.2.4.9;general;/opt/ros/hydro/lib/libopencv_flann.so.2.4.9;general;/opt/ros/hydro/lib/libopencv_features2d.so.2.4.9;general;/opt/ros/hydro/lib/libopencv_core.so.2.4.9;general;/opt/ros/hydro/lib/libopencv_contrib.so.2.4.9;general;/opt/ros/hydro/lib/libopencv_calib3d.so.2.4.9;general;/opt/ros/hydro/lib/libimage_transport.so;general;/opt/ros/hydro/lib/libmessage_filters.so;general;/usr/lib/libtinyxml.so;general;/opt/ros/hydro/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/hydro/lib/libroscpp.so;general;/usr/lib/libboost_signals-mt.so;general;/usr/lib/libboost_filesystem-mt.so;general;/opt/ros/hydro/lib/librosconsole.so;general;/opt/ros/hydro/lib/librosconsole_log4cxx.so;general;/opt/ros/hydro/lib/librosconsole_backend_interface.so;general;/usr/lib/liblog4cxx.so;general;/usr/lib/libboost_regex-mt.so;general;/opt/ros/hydro/lib/libxmlrpcpp.so;general;/opt/ros/hydro/lib/libroslib.so;general;/opt/ros/hydro/lib/libroscpp_serialization.so;general;/opt/ros/hydro/lib/librostime.so;general;/usr/lib/libboost_date_time-mt.so;general;/usr/lib/libboost_system-mt.so;general;/usr/lib/libboost_thread-mt.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/opt/ros/hydro/lib/libcpp_common.so;general;/opt/ros/hydro/lib/libconsole_bridge.so;general;flycapture;
+
+//Value Computed by CMake
+flea_ros_BINARY_DIR:STATIC=/home/denise/catkin_ws/build/flea_ros
+
+flea_ros_DIR:PATH=
+
+//Value Computed by CMake
+flea_ros_SOURCE_DIR:STATIC=/home/denise/catkin_ws/src/flea_ros
+
+//The directory containing a CMake configuration file for flycapture.
+flycapture_DIR:PATH=flycapture_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for gencpp.
+gencpp_DIR:PATH=/opt/ros/hydro/share/gencpp/cmake
+
+//The directory containing a CMake configuration file for genlisp.
+genlisp_DIR:PATH=/opt/ros/hydro/share/genlisp/cmake
+
+//The directory containing a CMake configuration file for genmsg.
+genmsg_DIR:PATH=/opt/ros/hydro/share/genmsg/cmake
+
+//The directory containing a CMake configuration file for genpy.
+genpy_DIR:PATH=/opt/ros/hydro/share/genpy/cmake
+
+//The directory containing a CMake configuration file for geometry_msgs.
+geometry_msgs_DIR:PATH=/opt/ros/hydro/share/geometry_msgs/cmake
 
 //Value Computed by CMake
 gtest_BINARY_DIR:STATIC=/home/denise/catkin_ws/build/gtest
@@ -280,8 +321,17 @@ gtest_force_shared_crt:BOOL=OFF
 //Dependencies for the target
 gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 
+//The directory containing a CMake configuration file for image_transport.
+image_transport_DIR:PATH=/opt/ros/hydro/share/image_transport/cmake
+
+//Value Computed by CMake
+learning_image_transport_BINARY_DIR:STATIC=/home/denise/catkin_ws/build/image_transport_ws/src/learning_image_transport
+
+//Value Computed by CMake
+learning_image_transport_SOURCE_DIR:STATIC=/home/denise/catkin_ws/src/image_transport_ws/src/learning_image_transport
+
 //Path to a library.
-lib:FILEPATH=/opt/ros/hydro/lib/libxmlrpcpp.so
+lib:FILEPATH=/usr/lib/x86_64-linux-gnu/libpthread.so
 
 //Value Computed by CMake
 mbrcellcount_BINARY_DIR:STATIC=/home/denise/catkin_ws/build/mbrcellcount
@@ -289,8 +339,20 @@ mbrcellcount_BINARY_DIR:STATIC=/home/denise/catkin_ws/build/mbrcellcount
 //Value Computed by CMake
 mbrcellcount_SOURCE_DIR:STATIC=/home/denise/catkin_ws/src/mbrcellcount
 
+//The directory containing a CMake configuration file for message_filters.
+message_filters_DIR:PATH=/opt/ros/hydro/share/message_filters/cmake
+
+//The directory containing a CMake configuration file for message_generation.
+message_generation_DIR:PATH=/opt/ros/hydro/share/message_generation/cmake
+
 //The directory containing a CMake configuration file for message_runtime.
 message_runtime_DIR:PATH=/opt/ros/hydro/share/message_runtime/cmake
+
+//The directory containing a CMake configuration file for opencv2.
+opencv2_DIR:PATH=opencv2_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for pluginlib.
+pluginlib_DIR:PATH=/opt/ros/hydro/share/pluginlib/cmake
 
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/hydro/share/rosconsole/cmake
@@ -307,8 +369,26 @@ roscpp_traits_DIR:PATH=/opt/ros/hydro/share/roscpp_traits/cmake
 //The directory containing a CMake configuration file for rosgraph_msgs.
 rosgraph_msgs_DIR:PATH=/opt/ros/hydro/share/rosgraph_msgs/cmake
 
+//The directory containing a CMake configuration file for roslib.
+roslib_DIR:PATH=/opt/ros/hydro/share/roslib/cmake
+
+//The directory containing a CMake configuration file for rospy.
+rospy_DIR:PATH=/opt/ros/hydro/share/rospy/cmake
+
+//The directory containing a CMake configuration file for rosserial_python.
+rosserial_python_DIR:PATH=/opt/ros/hydro/share/rosserial_python/cmake
+
 //The directory containing a CMake configuration file for rostime.
 rostime_DIR:PATH=/opt/ros/hydro/share/rostime/cmake
+
+//The directory containing a CMake configuration file for sensor_msgs.
+sensor_msgs_DIR:PATH=/opt/ros/hydro/share/sensor_msgs/cmake
+
+//Value Computed by CMake
+serialroboclaw_BINARY_DIR:STATIC=/home/denise/catkin_ws/build/serialroboclaw
+
+//Value Computed by CMake
+serialroboclaw_SOURCE_DIR:STATIC=/home/denise/catkin_ws/src/serialroboclaw
 
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/hydro/share/std_msgs/cmake
@@ -420,7 +500,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=3
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=6
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

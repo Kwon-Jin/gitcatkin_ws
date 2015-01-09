@@ -354,6 +354,279 @@ std_msgs_generate_messages_py/fast:
 	$(MAKE) -f mbrcellcount/CMakeFiles/std_msgs_generate_messages_py.dir/build.make mbrcellcount/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
+#=============================================================================
+# Target rules for targets named camera_magnet_gencpp
+
+# Build rule for target.
+camera_magnet_gencpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 camera_magnet_gencpp
+.PHONY : camera_magnet_gencpp
+
+# fast build rule for target.
+camera_magnet_gencpp/fast:
+	$(MAKE) -f camera_magnet/CMakeFiles/camera_magnet_gencpp.dir/build.make camera_magnet/CMakeFiles/camera_magnet_gencpp.dir/build
+.PHONY : camera_magnet_gencpp/fast
+
+#=============================================================================
+# Target rules for targets named camera_magnet_generate_messages
+
+# Build rule for target.
+camera_magnet_generate_messages: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 camera_magnet_generate_messages
+.PHONY : camera_magnet_generate_messages
+
+# fast build rule for target.
+camera_magnet_generate_messages/fast:
+	$(MAKE) -f camera_magnet/CMakeFiles/camera_magnet_generate_messages.dir/build.make camera_magnet/CMakeFiles/camera_magnet_generate_messages.dir/build
+.PHONY : camera_magnet_generate_messages/fast
+
+#=============================================================================
+# Target rules for targets named camera_magnet_generate_messages_cpp
+
+# Build rule for target.
+camera_magnet_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 camera_magnet_generate_messages_cpp
+.PHONY : camera_magnet_generate_messages_cpp
+
+# fast build rule for target.
+camera_magnet_generate_messages_cpp/fast:
+	$(MAKE) -f camera_magnet/CMakeFiles/camera_magnet_generate_messages_cpp.dir/build.make camera_magnet/CMakeFiles/camera_magnet_generate_messages_cpp.dir/build
+.PHONY : camera_magnet_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named camera_magnet_generate_messages_lisp
+
+# Build rule for target.
+camera_magnet_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 camera_magnet_generate_messages_lisp
+.PHONY : camera_magnet_generate_messages_lisp
+
+# fast build rule for target.
+camera_magnet_generate_messages_lisp/fast:
+	$(MAKE) -f camera_magnet/CMakeFiles/camera_magnet_generate_messages_lisp.dir/build.make camera_magnet/CMakeFiles/camera_magnet_generate_messages_lisp.dir/build
+.PHONY : camera_magnet_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named camera_magnet_generate_messages_py
+
+# Build rule for target.
+camera_magnet_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 camera_magnet_generate_messages_py
+.PHONY : camera_magnet_generate_messages_py
+
+# fast build rule for target.
+camera_magnet_generate_messages_py/fast:
+	$(MAKE) -f camera_magnet/CMakeFiles/camera_magnet_generate_messages_py.dir/build.make camera_magnet/CMakeFiles/camera_magnet_generate_messages_py.dir/build
+.PHONY : camera_magnet_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named camera_magnet_genlisp
+
+# Build rule for target.
+camera_magnet_genlisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 camera_magnet_genlisp
+.PHONY : camera_magnet_genlisp
+
+# fast build rule for target.
+camera_magnet_genlisp/fast:
+	$(MAKE) -f camera_magnet/CMakeFiles/camera_magnet_genlisp.dir/build.make camera_magnet/CMakeFiles/camera_magnet_genlisp.dir/build
+.PHONY : camera_magnet_genlisp/fast
+
+#=============================================================================
+# Target rules for targets named camera_magnet_genpy
+
+# Build rule for target.
+camera_magnet_genpy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 camera_magnet_genpy
+.PHONY : camera_magnet_genpy
+
+# fast build rule for target.
+camera_magnet_genpy/fast:
+	$(MAKE) -f camera_magnet/CMakeFiles/camera_magnet_genpy.dir/build.make camera_magnet/CMakeFiles/camera_magnet_genpy.dir/build
+.PHONY : camera_magnet_genpy/fast
+
+#=============================================================================
+# Target rules for targets named flea_subscribeimage
+
+# Build rule for target.
+flea_subscribeimage: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 flea_subscribeimage
+.PHONY : flea_subscribeimage
+
+# fast build rule for target.
+flea_subscribeimage/fast:
+	$(MAKE) -f camera_magnet/CMakeFiles/flea_subscribeimage.dir/build.make camera_magnet/CMakeFiles/flea_subscribeimage.dir/build
+.PHONY : flea_subscribeimage/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_cpp
+
+# Build rule for target.
+geometry_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_cpp
+.PHONY : geometry_msgs_generate_messages_cpp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f camera_magnet/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make camera_magnet/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+.PHONY : geometry_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_lisp
+
+# Build rule for target.
+geometry_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_lisp
+.PHONY : geometry_msgs_generate_messages_lisp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f camera_magnet/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make camera_magnet/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+.PHONY : geometry_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_py
+
+# Build rule for target.
+geometry_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_py
+.PHONY : geometry_msgs_generate_messages_py
+
+# fast build rule for target.
+geometry_msgs_generate_messages_py/fast:
+	$(MAKE) -f camera_magnet/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make camera_magnet/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+.PHONY : geometry_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named image_converter
+
+# Build rule for target.
+image_converter: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 image_converter
+.PHONY : image_converter
+
+# fast build rule for target.
+image_converter/fast:
+	$(MAKE) -f camera_magnet/CMakeFiles/image_converter.dir/build.make camera_magnet/CMakeFiles/image_converter.dir/build
+.PHONY : image_converter/fast
+
+#=============================================================================
+# Target rules for targets named magnet_track
+
+# Build rule for target.
+magnet_track: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 magnet_track
+.PHONY : magnet_track
+
+# fast build rule for target.
+magnet_track/fast:
+	$(MAKE) -f camera_magnet/CMakeFiles/magnet_track.dir/build.make camera_magnet/CMakeFiles/magnet_track.dir/build
+.PHONY : magnet_track/fast
+
+#=============================================================================
+# Target rules for targets named post_magnetcontourellipse
+
+# Build rule for target.
+post_magnetcontourellipse: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 post_magnetcontourellipse
+.PHONY : post_magnetcontourellipse
+
+# fast build rule for target.
+post_magnetcontourellipse/fast:
+	$(MAKE) -f camera_magnet/CMakeFiles/post_magnetcontourellipse.dir/build.make camera_magnet/CMakeFiles/post_magnetcontourellipse.dir/build
+.PHONY : post_magnetcontourellipse/fast
+
+#=============================================================================
+# Target rules for targets named post_magnettrack_files
+
+# Build rule for target.
+post_magnettrack_files: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 post_magnettrack_files
+.PHONY : post_magnettrack_files
+
+# fast build rule for target.
+post_magnettrack_files/fast:
+	$(MAKE) -f camera_magnet/CMakeFiles/post_magnettrack_files.dir/build.make camera_magnet/CMakeFiles/post_magnettrack_files.dir/build
+.PHONY : post_magnettrack_files/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_cpp
+
+# Build rule for target.
+sensor_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_cpp
+.PHONY : sensor_msgs_generate_messages_cpp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f camera_magnet/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make camera_magnet/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+.PHONY : sensor_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_lisp
+
+# Build rule for target.
+sensor_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_lisp
+.PHONY : sensor_msgs_generate_messages_lisp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f camera_magnet/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make camera_magnet/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+.PHONY : sensor_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_py
+
+# Build rule for target.
+sensor_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_py
+.PHONY : sensor_msgs_generate_messages_py
+
+# fast build rule for target.
+sensor_msgs_generate_messages_py/fast:
+	$(MAKE) -f camera_magnet/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make camera_magnet/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+.PHONY : sensor_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named flea
+
+# Build rule for target.
+flea: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 flea
+.PHONY : flea
+
+# fast build rule for target.
+flea/fast:
+	$(MAKE) -f flea_ros/CMakeFiles/flea.dir/build.make flea_ros/CMakeFiles/flea.dir/build
+.PHONY : flea/fast
+
+#=============================================================================
+# Target rules for targets named flea_ros_color_server
+
+# Build rule for target.
+flea_ros_color_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 flea_ros_color_server
+.PHONY : flea_ros_color_server
+
+# fast build rule for target.
+flea_ros_color_server/fast:
+	$(MAKE) -f flea_ros/CMakeFiles/flea_ros_color_server.dir/build.make flea_ros/CMakeFiles/flea_ros_color_server.dir/build
+.PHONY : flea_ros_color_server/fast
+
+#=============================================================================
+# Target rules for targets named flea_ros_server
+
+# Build rule for target.
+flea_ros_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 flea_ros_server
+.PHONY : flea_ros_server
+
+# fast build rule for target.
+flea_ros_server/fast:
+	$(MAKE) -f flea_ros/CMakeFiles/flea_ros_server.dir/build.make flea_ros/CMakeFiles/flea_ros_server.dir/build
+.PHONY : flea_ros_server/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -383,6 +656,27 @@ help:
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_py"
+	@echo "... camera_magnet_gencpp"
+	@echo "... camera_magnet_generate_messages"
+	@echo "... camera_magnet_generate_messages_cpp"
+	@echo "... camera_magnet_generate_messages_lisp"
+	@echo "... camera_magnet_generate_messages_py"
+	@echo "... camera_magnet_genlisp"
+	@echo "... camera_magnet_genpy"
+	@echo "... flea_subscribeimage"
+	@echo "... geometry_msgs_generate_messages_cpp"
+	@echo "... geometry_msgs_generate_messages_lisp"
+	@echo "... geometry_msgs_generate_messages_py"
+	@echo "... image_converter"
+	@echo "... magnet_track"
+	@echo "... post_magnetcontourellipse"
+	@echo "... post_magnettrack_files"
+	@echo "... sensor_msgs_generate_messages_cpp"
+	@echo "... sensor_msgs_generate_messages_lisp"
+	@echo "... sensor_msgs_generate_messages_py"
+	@echo "... flea"
+	@echo "... flea_ros_color_server"
+	@echo "... flea_ros_server"
 .PHONY : help
 
 

@@ -6,3 +6,6 @@
 # testing this directory and lists subdirectories to be tested as well.
 SUBDIRS(gtest)
 SUBDIRS(mbrcellcount)
+SUBDIRS(camera_magnet)
+SUBDIRS(flea_ros)
+SUBDIRS(serialroboclaw)

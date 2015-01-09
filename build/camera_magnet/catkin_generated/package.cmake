@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "camera_magnet")
+set(camera_magnet_MAINTAINER "denise <denise@todo.todo>")
+set(camera_magnet_DEPRECATED "")
+set(camera_magnet_VERSION "0.0.0")
+set(camera_magnet_BUILD_DEPENDS "message_generation" "roscpp" "cv_bridge" "sensor_msgs" "image_transport")
+set(camera_magnet_RUN_DEPENDS "message_runtime" "roscpp" "cv_bridge" "sensor_msgs" "std_msgs" "image_transport")
+set(camera_magnet_BUILDTOOL_DEPENDS "catkin")

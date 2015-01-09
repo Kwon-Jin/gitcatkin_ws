@@ -1,0 +1,12 @@
+<launch>
+	<node 	pkg="flea_ros" 
+			name = "flea_cam"
+			type = "flea_ros_server" >
+	</node>
+	<node 	pkg="image_view" 
+			name = "disp"
+			type = "image_view" 
+			args="image:=/camera/image_raw" >
+	</node>
+
+</launch>

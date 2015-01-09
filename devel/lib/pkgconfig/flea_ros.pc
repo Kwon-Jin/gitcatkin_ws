@@ -1,0 +1,8 @@
+prefix=/home/denise/catkin_ws/devel
+
+Name: flea_ros
+Description: Description of flea_ros
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/denise/catkin_ws/devel/lib 
+Requires: 

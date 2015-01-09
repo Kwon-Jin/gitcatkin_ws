@@ -6,7 +6,8 @@
 #include <math.h>
 #include <fstream>
 
-#define IMAGE_PATH "/home/denise/catkin_ws/src/mbrcellcount/images/"
+//#define IMAGE_PATH "/home/denise/catkin_ws/src/mbrcellcount/images/"
+#define IMAGE_PATH "/home/denise/bagfiles/inout1/jan72015_120fps_b/"
 
 using namespace cv;
 using namespace std;
@@ -18,10 +19,10 @@ RNG rng(12345);
 ofstream cellposn;
 
 // input parameters to set
-string filename = "mbr1";
-string filenameread = filename + ".tif";
+string filename = "frame0107";
+string filenameread = filename + ".jpg";
 string filenametxt = filename + ".txt";
-string filenamewrite = filename + ".jpg";
+string filenamewrite = filename + "_regionSelection.jpg";
 
 // cell detection parameters:
 int contoursizelowbound = 5; //defaults: 5

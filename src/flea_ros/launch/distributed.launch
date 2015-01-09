@@ -1,0 +1,16 @@
+<launch>
+	<machine name="desktop" address="mike-XPS-8500" user="mike" default="true" />
+	<machine name="odroid" address="XuMW" user="odroid"
+	env-loader="~/ros_remote_loader.sh"  default="false" />
+	<node 	pkg="flea_ros" 
+			name = "flea_cam"
+			type = "flea_ros_server" 
+			machine = "odroid">
+	</node>
+	<node 	pkg="image_view" 
+			name = "disp"
+			type = "image_view" 
+			args="image:=/camera/image_raw" >
+	</node>
+
+</launch>

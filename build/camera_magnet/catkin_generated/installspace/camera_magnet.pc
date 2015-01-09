@@ -1,0 +1,8 @@
+prefix=/home/denise/catkin_ws/install
+
+Name: camera_magnet
+Description: Description of camera_magnet
+Version: 0.0.0
+Cflags: -I/home/denise/catkin_ws/install/include
+Libs: -L/home/denise/catkin_ws/install/lib 
+Requires: message_runtime

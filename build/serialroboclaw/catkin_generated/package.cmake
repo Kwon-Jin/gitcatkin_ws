@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "serialroboclaw")
+set(serialroboclaw_MAINTAINER "denise <denise@todo.todo>")
+set(serialroboclaw_DEPRECATED "")
+set(serialroboclaw_VERSION "0.0.0")
+set(serialroboclaw_BUILD_DEPENDS "rosserial_python" "std_msgs")
+set(serialroboclaw_RUN_DEPENDS "rosserial_python" "std_msgs")
+set(serialroboclaw_BUILDTOOL_DEPENDS "catkin")
