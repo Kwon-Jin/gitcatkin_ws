@@ -1,5 +1,6 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/camera_magnet_generate_messages_cpp"
+  "/home/denise/catkin_ws/devel/include/camera_magnet/roboclawCmd.h"
   "/home/denise/catkin_ws/devel/include/camera_magnet/xyReal.h"
 )
 

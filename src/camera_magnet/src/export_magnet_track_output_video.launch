@@ -1,0 +1,6 @@
+<launch>
+  <node pkg="rosbag" type="play" name="rosbag" args="-d 2 /home/denise/bagfiles/dataset1/2015-01-14-14-13-40.bag"/>
+  <node name="extract" pkg="image_view" type="extract_images" respawn="false" output="screen" cwd="ROS_HOME" args= "_sec_per_frame:=0.005" >
+    <remap from="image" to="/magnet_track/output_video"/>
+  </node>
+</launch>

@@ -1,5 +1,5 @@
 <launch>
-  <node pkg="rosbag" type="play" name="rosbag" args="-d 2 /home/denise/bagfiles/inout1/session1_2014-12-05-16-54-39.bag"/>
+  <node pkg="rosbag" type="play" name="rosbag" args="-d 2 /home/denise/bagfiles/fb_LR/2015-01-14-10-18-59.bag"/>
   <node name="extract" pkg="image_view" type="extract_images" respawn="false" output="screen" cwd="ROS_HOME" args= "_sec_per_frame:=0.005" >
     <remap from="image" to="/camera/image_raw"/>
   </node>

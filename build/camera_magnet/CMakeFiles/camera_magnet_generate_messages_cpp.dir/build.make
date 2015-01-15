@@ -42,16 +42,27 @@ CMAKE_BINARY_DIR = /home/denise/catkin_ws/build
 # Include the progress variables for this target.
 include camera_magnet/CMakeFiles/camera_magnet_generate_messages_cpp.dir/progress.make
 
+camera_magnet/CMakeFiles/camera_magnet_generate_messages_cpp: /home/denise/catkin_ws/devel/include/camera_magnet/roboclawCmd.h
 camera_magnet/CMakeFiles/camera_magnet_generate_messages_cpp: /home/denise/catkin_ws/devel/include/camera_magnet/xyReal.h
+
+/home/denise/catkin_ws/devel/include/camera_magnet/roboclawCmd.h: /opt/ros/hydro/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
+/home/denise/catkin_ws/devel/include/camera_magnet/roboclawCmd.h: /home/denise/catkin_ws/src/camera_magnet/msg/roboclawCmd.msg
+/home/denise/catkin_ws/devel/include/camera_magnet/roboclawCmd.h: /opt/ros/hydro/share/std_msgs/cmake/../msg/Header.msg
+/home/denise/catkin_ws/devel/include/camera_magnet/roboclawCmd.h: /opt/ros/hydro/share/gencpp/cmake/../msg.h.template
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/denise/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from camera_magnet/roboclawCmd.msg"
+	cd /home/denise/catkin_ws/build/camera_magnet && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/hydro/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/denise/catkin_ws/src/camera_magnet/msg/roboclawCmd.msg -Icamera_magnet:/home/denise/catkin_ws/src/camera_magnet/msg -Istd_msgs:/opt/ros/hydro/share/std_msgs/cmake/../msg -p camera_magnet -o /home/denise/catkin_ws/devel/include/camera_magnet -e /opt/ros/hydro/share/gencpp/cmake/..
 
 /home/denise/catkin_ws/devel/include/camera_magnet/xyReal.h: /opt/ros/hydro/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
 /home/denise/catkin_ws/devel/include/camera_magnet/xyReal.h: /home/denise/catkin_ws/src/camera_magnet/msg/xyReal.msg
+/home/denise/catkin_ws/devel/include/camera_magnet/xyReal.h: /opt/ros/hydro/share/std_msgs/cmake/../msg/Header.msg
 /home/denise/catkin_ws/devel/include/camera_magnet/xyReal.h: /opt/ros/hydro/share/gencpp/cmake/../msg.h.template
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/denise/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/denise/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from camera_magnet/xyReal.msg"
 	cd /home/denise/catkin_ws/build/camera_magnet && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/hydro/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/denise/catkin_ws/src/camera_magnet/msg/xyReal.msg -Icamera_magnet:/home/denise/catkin_ws/src/camera_magnet/msg -Istd_msgs:/opt/ros/hydro/share/std_msgs/cmake/../msg -p camera_magnet -o /home/denise/catkin_ws/devel/include/camera_magnet -e /opt/ros/hydro/share/gencpp/cmake/..
 
 camera_magnet_generate_messages_cpp: camera_magnet/CMakeFiles/camera_magnet_generate_messages_cpp
+camera_magnet_generate_messages_cpp: /home/denise/catkin_ws/devel/include/camera_magnet/roboclawCmd.h
 camera_magnet_generate_messages_cpp: /home/denise/catkin_ws/devel/include/camera_magnet/xyReal.h
 camera_magnet_generate_messages_cpp: camera_magnet/CMakeFiles/camera_magnet_generate_messages_cpp.dir/build.make
 .PHONY : camera_magnet_generate_messages_cpp

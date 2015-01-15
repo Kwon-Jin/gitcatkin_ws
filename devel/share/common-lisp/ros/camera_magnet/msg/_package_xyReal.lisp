@@ -1,5 +1,7 @@
 (cl:in-package camera_magnet-msg)
-(cl:export '(LEFTX-VAL
+(cl:export '(HEADER-VAL
+          HEADER
+          LEFTX-VAL
           LEFTX
           LEFTY-VAL
           LEFTY

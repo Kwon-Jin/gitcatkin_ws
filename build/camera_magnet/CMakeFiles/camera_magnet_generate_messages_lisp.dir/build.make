@@ -42,15 +42,25 @@ CMAKE_BINARY_DIR = /home/denise/catkin_ws/build
 # Include the progress variables for this target.
 include camera_magnet/CMakeFiles/camera_magnet_generate_messages_lisp.dir/progress.make
 
+camera_magnet/CMakeFiles/camera_magnet_generate_messages_lisp: /home/denise/catkin_ws/devel/share/common-lisp/ros/camera_magnet/msg/roboclawCmd.lisp
 camera_magnet/CMakeFiles/camera_magnet_generate_messages_lisp: /home/denise/catkin_ws/devel/share/common-lisp/ros/camera_magnet/msg/xyReal.lisp
+
+/home/denise/catkin_ws/devel/share/common-lisp/ros/camera_magnet/msg/roboclawCmd.lisp: /opt/ros/hydro/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
+/home/denise/catkin_ws/devel/share/common-lisp/ros/camera_magnet/msg/roboclawCmd.lisp: /home/denise/catkin_ws/src/camera_magnet/msg/roboclawCmd.msg
+/home/denise/catkin_ws/devel/share/common-lisp/ros/camera_magnet/msg/roboclawCmd.lisp: /opt/ros/hydro/share/std_msgs/cmake/../msg/Header.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/denise/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from camera_magnet/roboclawCmd.msg"
+	cd /home/denise/catkin_ws/build/camera_magnet && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/hydro/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/denise/catkin_ws/src/camera_magnet/msg/roboclawCmd.msg -Icamera_magnet:/home/denise/catkin_ws/src/camera_magnet/msg -Istd_msgs:/opt/ros/hydro/share/std_msgs/cmake/../msg -p camera_magnet -o /home/denise/catkin_ws/devel/share/common-lisp/ros/camera_magnet/msg
 
 /home/denise/catkin_ws/devel/share/common-lisp/ros/camera_magnet/msg/xyReal.lisp: /opt/ros/hydro/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
 /home/denise/catkin_ws/devel/share/common-lisp/ros/camera_magnet/msg/xyReal.lisp: /home/denise/catkin_ws/src/camera_magnet/msg/xyReal.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/denise/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_1)
+/home/denise/catkin_ws/devel/share/common-lisp/ros/camera_magnet/msg/xyReal.lisp: /opt/ros/hydro/share/std_msgs/cmake/../msg/Header.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/denise/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from camera_magnet/xyReal.msg"
 	cd /home/denise/catkin_ws/build/camera_magnet && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/hydro/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/denise/catkin_ws/src/camera_magnet/msg/xyReal.msg -Icamera_magnet:/home/denise/catkin_ws/src/camera_magnet/msg -Istd_msgs:/opt/ros/hydro/share/std_msgs/cmake/../msg -p camera_magnet -o /home/denise/catkin_ws/devel/share/common-lisp/ros/camera_magnet/msg
 
 camera_magnet_generate_messages_lisp: camera_magnet/CMakeFiles/camera_magnet_generate_messages_lisp
+camera_magnet_generate_messages_lisp: /home/denise/catkin_ws/devel/share/common-lisp/ros/camera_magnet/msg/roboclawCmd.lisp
 camera_magnet_generate_messages_lisp: /home/denise/catkin_ws/devel/share/common-lisp/ros/camera_magnet/msg/xyReal.lisp
 camera_magnet_generate_messages_lisp: camera_magnet/CMakeFiles/camera_magnet_generate_messages_lisp.dir/build.make
 .PHONY : camera_magnet_generate_messages_lisp

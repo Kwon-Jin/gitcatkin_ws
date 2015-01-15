@@ -3,5 +3,7 @@
   (:export
    "<XYREAL>"
    "XYREAL"
+   "<ROBOCLAWCMD>"
+   "ROBOCLAWCMD"
   ))
 

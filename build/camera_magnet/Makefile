@@ -147,6 +147,34 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+camera_magnet/CMakeFiles/cal_magnet_track.dir/rule:
+	cd /home/denise/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 camera_magnet/CMakeFiles/cal_magnet_track.dir/rule
+.PHONY : camera_magnet/CMakeFiles/cal_magnet_track.dir/rule
+
+# Convenience name for target.
+cal_magnet_track: camera_magnet/CMakeFiles/cal_magnet_track.dir/rule
+.PHONY : cal_magnet_track
+
+# fast build rule for target.
+cal_magnet_track/fast:
+	cd /home/denise/catkin_ws/build && $(MAKE) -f camera_magnet/CMakeFiles/cal_magnet_track.dir/build.make camera_magnet/CMakeFiles/cal_magnet_track.dir/build
+.PHONY : cal_magnet_track/fast
+
+# Convenience name for target.
+camera_magnet/CMakeFiles/camera_magnet.dir/rule:
+	cd /home/denise/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 camera_magnet/CMakeFiles/camera_magnet.dir/rule
+.PHONY : camera_magnet/CMakeFiles/camera_magnet.dir/rule
+
+# Convenience name for target.
+camera_magnet: camera_magnet/CMakeFiles/camera_magnet.dir/rule
+.PHONY : camera_magnet
+
+# fast build rule for target.
+camera_magnet/fast:
+	cd /home/denise/catkin_ws/build && $(MAKE) -f camera_magnet/CMakeFiles/camera_magnet.dir/build.make camera_magnet/CMakeFiles/camera_magnet.dir/build
+.PHONY : camera_magnet/fast
+
+# Convenience name for target.
 camera_magnet/CMakeFiles/camera_magnet_gencpp.dir/rule:
 	cd /home/denise/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 camera_magnet/CMakeFiles/camera_magnet_gencpp.dir/rule
 .PHONY : camera_magnet/CMakeFiles/camera_magnet_gencpp.dir/rule
@@ -398,6 +426,44 @@ sensor_msgs_generate_messages_py/fast:
 	cd /home/denise/catkin_ws/build && $(MAKE) -f camera_magnet/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make camera_magnet/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
 .PHONY : sensor_msgs_generate_messages_py/fast
 
+# Convenience name for target.
+camera_magnet/CMakeFiles/testcal_magnet_track.dir/rule:
+	cd /home/denise/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 camera_magnet/CMakeFiles/testcal_magnet_track.dir/rule
+.PHONY : camera_magnet/CMakeFiles/testcal_magnet_track.dir/rule
+
+# Convenience name for target.
+testcal_magnet_track: camera_magnet/CMakeFiles/testcal_magnet_track.dir/rule
+.PHONY : testcal_magnet_track
+
+# fast build rule for target.
+testcal_magnet_track/fast:
+	cd /home/denise/catkin_ws/build && $(MAKE) -f camera_magnet/CMakeFiles/testcal_magnet_track.dir/build.make camera_magnet/CMakeFiles/testcal_magnet_track.dir/build
+.PHONY : testcal_magnet_track/fast
+
+src/cal_magnet_track.o: src/cal_magnet_track.cpp.o
+.PHONY : src/cal_magnet_track.o
+
+# target to build an object file
+src/cal_magnet_track.cpp.o:
+	cd /home/denise/catkin_ws/build && $(MAKE) -f camera_magnet/CMakeFiles/cal_magnet_track.dir/build.make camera_magnet/CMakeFiles/cal_magnet_track.dir/src/cal_magnet_track.cpp.o
+.PHONY : src/cal_magnet_track.cpp.o
+
+src/cal_magnet_track.i: src/cal_magnet_track.cpp.i
+.PHONY : src/cal_magnet_track.i
+
+# target to preprocess a source file
+src/cal_magnet_track.cpp.i:
+	cd /home/denise/catkin_ws/build && $(MAKE) -f camera_magnet/CMakeFiles/cal_magnet_track.dir/build.make camera_magnet/CMakeFiles/cal_magnet_track.dir/src/cal_magnet_track.cpp.i
+.PHONY : src/cal_magnet_track.cpp.i
+
+src/cal_magnet_track.s: src/cal_magnet_track.cpp.s
+.PHONY : src/cal_magnet_track.s
+
+# target to generate assembly for a file
+src/cal_magnet_track.cpp.s:
+	cd /home/denise/catkin_ws/build && $(MAKE) -f camera_magnet/CMakeFiles/cal_magnet_track.dir/build.make camera_magnet/CMakeFiles/cal_magnet_track.dir/src/cal_magnet_track.cpp.s
+.PHONY : src/cal_magnet_track.cpp.s
+
 src/flea_subscribeimage.o: src/flea_subscribeimage.cpp.o
 .PHONY : src/flea_subscribeimage.o
 
@@ -421,6 +487,30 @@ src/flea_subscribeimage.s: src/flea_subscribeimage.cpp.s
 src/flea_subscribeimage.cpp.s:
 	cd /home/denise/catkin_ws/build && $(MAKE) -f camera_magnet/CMakeFiles/flea_subscribeimage.dir/build.make camera_magnet/CMakeFiles/flea_subscribeimage.dir/src/flea_subscribeimage.cpp.s
 .PHONY : src/flea_subscribeimage.cpp.s
+
+src/hw4_helpers.o: src/hw4_helpers.cpp.o
+.PHONY : src/hw4_helpers.o
+
+# target to build an object file
+src/hw4_helpers.cpp.o:
+	cd /home/denise/catkin_ws/build && $(MAKE) -f camera_magnet/CMakeFiles/camera_magnet.dir/build.make camera_magnet/CMakeFiles/camera_magnet.dir/src/hw4_helpers.cpp.o
+.PHONY : src/hw4_helpers.cpp.o
+
+src/hw4_helpers.i: src/hw4_helpers.cpp.i
+.PHONY : src/hw4_helpers.i
+
+# target to preprocess a source file
+src/hw4_helpers.cpp.i:
+	cd /home/denise/catkin_ws/build && $(MAKE) -f camera_magnet/CMakeFiles/camera_magnet.dir/build.make camera_magnet/CMakeFiles/camera_magnet.dir/src/hw4_helpers.cpp.i
+.PHONY : src/hw4_helpers.cpp.i
+
+src/hw4_helpers.s: src/hw4_helpers.cpp.s
+.PHONY : src/hw4_helpers.s
+
+# target to generate assembly for a file
+src/hw4_helpers.cpp.s:
+	cd /home/denise/catkin_ws/build && $(MAKE) -f camera_magnet/CMakeFiles/camera_magnet.dir/build.make camera_magnet/CMakeFiles/camera_magnet.dir/src/hw4_helpers.cpp.s
+.PHONY : src/hw4_helpers.cpp.s
 
 src/image_converter.o: src/image_converter.cpp.o
 .PHONY : src/image_converter.o
@@ -518,12 +608,38 @@ src/post_magnettrack_files.cpp.s:
 	cd /home/denise/catkin_ws/build && $(MAKE) -f camera_magnet/CMakeFiles/post_magnettrack_files.dir/build.make camera_magnet/CMakeFiles/post_magnettrack_files.dir/src/post_magnettrack_files.cpp.s
 .PHONY : src/post_magnettrack_files.cpp.s
 
+src/testcal_magnet_track.o: src/testcal_magnet_track.cpp.o
+.PHONY : src/testcal_magnet_track.o
+
+# target to build an object file
+src/testcal_magnet_track.cpp.o:
+	cd /home/denise/catkin_ws/build && $(MAKE) -f camera_magnet/CMakeFiles/testcal_magnet_track.dir/build.make camera_magnet/CMakeFiles/testcal_magnet_track.dir/src/testcal_magnet_track.cpp.o
+.PHONY : src/testcal_magnet_track.cpp.o
+
+src/testcal_magnet_track.i: src/testcal_magnet_track.cpp.i
+.PHONY : src/testcal_magnet_track.i
+
+# target to preprocess a source file
+src/testcal_magnet_track.cpp.i:
+	cd /home/denise/catkin_ws/build && $(MAKE) -f camera_magnet/CMakeFiles/testcal_magnet_track.dir/build.make camera_magnet/CMakeFiles/testcal_magnet_track.dir/src/testcal_magnet_track.cpp.i
+.PHONY : src/testcal_magnet_track.cpp.i
+
+src/testcal_magnet_track.s: src/testcal_magnet_track.cpp.s
+.PHONY : src/testcal_magnet_track.s
+
+# target to generate assembly for a file
+src/testcal_magnet_track.cpp.s:
+	cd /home/denise/catkin_ws/build && $(MAKE) -f camera_magnet/CMakeFiles/testcal_magnet_track.dir/build.make camera_magnet/CMakeFiles/testcal_magnet_track.dir/src/testcal_magnet_track.cpp.s
+.PHONY : src/testcal_magnet_track.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... cal_magnet_track"
+	@echo "... camera_magnet"
 	@echo "... camera_magnet_gencpp"
 	@echo "... camera_magnet_generate_messages"
 	@echo "... camera_magnet_generate_messages_cpp"
@@ -549,9 +665,16 @@ help:
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... test"
+	@echo "... testcal_magnet_track"
+	@echo "... src/cal_magnet_track.o"
+	@echo "... src/cal_magnet_track.i"
+	@echo "... src/cal_magnet_track.s"
 	@echo "... src/flea_subscribeimage.o"
 	@echo "... src/flea_subscribeimage.i"
 	@echo "... src/flea_subscribeimage.s"
+	@echo "... src/hw4_helpers.o"
+	@echo "... src/hw4_helpers.i"
+	@echo "... src/hw4_helpers.s"
 	@echo "... src/image_converter.o"
 	@echo "... src/image_converter.i"
 	@echo "... src/image_converter.s"
@@ -564,6 +687,9 @@ help:
 	@echo "... src/post_magnettrack_files.o"
 	@echo "... src/post_magnettrack_files.i"
 	@echo "... src/post_magnettrack_files.s"
+	@echo "... src/testcal_magnet_track.o"
+	@echo "... src/testcal_magnet_track.i"
+	@echo "... src/testcal_magnet_track.s"
 .PHONY : help
 
 

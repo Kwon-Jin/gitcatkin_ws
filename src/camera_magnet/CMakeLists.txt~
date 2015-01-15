@@ -54,6 +54,7 @@ find_package(flycapture)
 add_message_files(
    FILES
    xyReal.msg
+   roboclawCmd.msg
  )
 
 ## Generate services in the 'srv' folder
@@ -71,10 +72,10 @@ add_message_files(
 # )
 
 ## Generate added messages and services with any dependencies listed here
-# generate_messages(
-#   DEPENDENCIES
-#   std_msgs  # Or other packages containing msgs
-# )
+generate_messages(
+   DEPENDENCIES
+   std_msgs  # Or other packages containing msgs
+ )
 
 ###################################
 ## catkin specific configuration ##
@@ -107,9 +108,11 @@ include_directories(
 
 
 ## Declare a cpp library
-# add_library(camera_magnet
-#   src/${PROJECT_NAME}/camera_magnet.cpp
-# )
+ add_library(camera_magnet
+#   src/hw4.cpp
+   src/hw4_helpers.cpp
+ )
+target_link_libraries(camera_magnet ${OpenCV_LIBS})
 
 
 ## Declare a cpp executable
@@ -138,6 +141,20 @@ add_executable(post_magnetcontourellipse src/post_magnetcontourellipse.cpp)
 target_link_libraries(post_magnetcontourellipse
   ${catkin_LIBRARIES}
 )
+
+
+add_executable(cal_magnet_track src/cal_magnet_track.cpp)
+target_link_libraries(cal_magnet_track
+  ${catkin_LIBRARIES}
+  camera_magnet
+)
+
+add_executable(testcal_magnet_track src/testcal_magnet_track.cpp)
+target_link_libraries(testcal_magnet_track
+  ${catkin_LIBRARIES}
+  camera_magnet
+)
+
 
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes

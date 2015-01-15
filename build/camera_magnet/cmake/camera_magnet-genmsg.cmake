@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "camera_magnet: 1 messages, 0 services")
+message(STATUS "camera_magnet: 2 messages, 0 services")
 
 set(MSG_I_FLAGS "-Icamera_magnet:/home/denise/catkin_ws/src/camera_magnet/msg;-Istd_msgs:/opt/ros/hydro/share/std_msgs/cmake/../msg")
 
@@ -18,9 +18,15 @@ add_custom_target(camera_magnet_generate_messages ALL)
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(camera_magnet
+  "/home/denise/catkin_ws/src/camera_magnet/msg/roboclawCmd.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/hydro/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/camera_magnet
+)
+_generate_msg_cpp(camera_magnet
   "/home/denise/catkin_ws/src/camera_magnet/msg/xyReal.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/hydro/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/camera_magnet
 )
 
@@ -47,9 +53,15 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS camera_magnet_generate_messages_cpp
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(camera_magnet
+  "/home/denise/catkin_ws/src/camera_magnet/msg/roboclawCmd.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/hydro/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/camera_magnet
+)
+_generate_msg_lisp(camera_magnet
   "/home/denise/catkin_ws/src/camera_magnet/msg/xyReal.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/hydro/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/camera_magnet
 )
 
@@ -76,9 +88,15 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS camera_magnet_generate_messages_lis
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(camera_magnet
+  "/home/denise/catkin_ws/src/camera_magnet/msg/roboclawCmd.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/hydro/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/camera_magnet
+)
+_generate_msg_py(camera_magnet
   "/home/denise/catkin_ws/src/camera_magnet/msg/xyReal.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/hydro/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/camera_magnet
 )
 

@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
-messages_str = "/home/denise/catkin_ws/src/camera_magnet/msg/xyReal.msg"
+messages_str = "/home/denise/catkin_ws/src/camera_magnet/msg/xyReal.msg;/home/denise/catkin_ws/src/camera_magnet/msg/roboclawCmd.msg"
 services_str = ""
 pkg_name = "camera_magnet"
 dependencies_str = "std_msgs"

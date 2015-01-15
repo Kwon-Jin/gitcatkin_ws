@@ -1,3 +1,5 @@
+/home/denise/catkin_ws/build/camera_magnet/CMakeFiles/cal_magnet_track.dir
+/home/denise/catkin_ws/build/camera_magnet/CMakeFiles/camera_magnet.dir
 /home/denise/catkin_ws/build/camera_magnet/CMakeFiles/camera_magnet_gencpp.dir
 /home/denise/catkin_ws/build/camera_magnet/CMakeFiles/camera_magnet_generate_messages.dir
 /home/denise/catkin_ws/build/camera_magnet/CMakeFiles/camera_magnet_generate_messages_cpp.dir
@@ -34,4 +36,5 @@
 /home/denise/catkin_ws/build/mbrcellcount/CMakeFiles/std_msgs_generate_messages_cpp.dir
 /home/denise/catkin_ws/build/mbrcellcount/CMakeFiles/std_msgs_generate_messages_lisp.dir
 /home/denise/catkin_ws/build/mbrcellcount/CMakeFiles/std_msgs_generate_messages_py.dir
+/home/denise/catkin_ws/build/camera_magnet/CMakeFiles/testcal_magnet_track.dir
 /home/denise/catkin_ws/build/CMakeFiles/tests.dir

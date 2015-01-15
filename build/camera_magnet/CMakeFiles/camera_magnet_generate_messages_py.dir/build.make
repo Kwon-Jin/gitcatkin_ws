@@ -42,22 +42,33 @@ CMAKE_BINARY_DIR = /home/denise/catkin_ws/build
 # Include the progress variables for this target.
 include camera_magnet/CMakeFiles/camera_magnet_generate_messages_py.dir/progress.make
 
+camera_magnet/CMakeFiles/camera_magnet_generate_messages_py: /home/denise/catkin_ws/devel/lib/python2.7/dist-packages/camera_magnet/msg/_roboclawCmd.py
 camera_magnet/CMakeFiles/camera_magnet_generate_messages_py: /home/denise/catkin_ws/devel/lib/python2.7/dist-packages/camera_magnet/msg/_xyReal.py
 camera_magnet/CMakeFiles/camera_magnet_generate_messages_py: /home/denise/catkin_ws/devel/lib/python2.7/dist-packages/camera_magnet/msg/__init__.py
 
+/home/denise/catkin_ws/devel/lib/python2.7/dist-packages/camera_magnet/msg/_roboclawCmd.py: /opt/ros/hydro/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/denise/catkin_ws/devel/lib/python2.7/dist-packages/camera_magnet/msg/_roboclawCmd.py: /home/denise/catkin_ws/src/camera_magnet/msg/roboclawCmd.msg
+/home/denise/catkin_ws/devel/lib/python2.7/dist-packages/camera_magnet/msg/_roboclawCmd.py: /opt/ros/hydro/share/std_msgs/cmake/../msg/Header.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/denise/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG camera_magnet/roboclawCmd"
+	cd /home/denise/catkin_ws/build/camera_magnet && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/hydro/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/denise/catkin_ws/src/camera_magnet/msg/roboclawCmd.msg -Icamera_magnet:/home/denise/catkin_ws/src/camera_magnet/msg -Istd_msgs:/opt/ros/hydro/share/std_msgs/cmake/../msg -p camera_magnet -o /home/denise/catkin_ws/devel/lib/python2.7/dist-packages/camera_magnet/msg
+
 /home/denise/catkin_ws/devel/lib/python2.7/dist-packages/camera_magnet/msg/_xyReal.py: /opt/ros/hydro/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
 /home/denise/catkin_ws/devel/lib/python2.7/dist-packages/camera_magnet/msg/_xyReal.py: /home/denise/catkin_ws/src/camera_magnet/msg/xyReal.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/denise/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_1)
+/home/denise/catkin_ws/devel/lib/python2.7/dist-packages/camera_magnet/msg/_xyReal.py: /opt/ros/hydro/share/std_msgs/cmake/../msg/Header.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/denise/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG camera_magnet/xyReal"
 	cd /home/denise/catkin_ws/build/camera_magnet && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/hydro/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/denise/catkin_ws/src/camera_magnet/msg/xyReal.msg -Icamera_magnet:/home/denise/catkin_ws/src/camera_magnet/msg -Istd_msgs:/opt/ros/hydro/share/std_msgs/cmake/../msg -p camera_magnet -o /home/denise/catkin_ws/devel/lib/python2.7/dist-packages/camera_magnet/msg
 
 /home/denise/catkin_ws/devel/lib/python2.7/dist-packages/camera_magnet/msg/__init__.py: /opt/ros/hydro/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/denise/catkin_ws/devel/lib/python2.7/dist-packages/camera_magnet/msg/__init__.py: /home/denise/catkin_ws/devel/lib/python2.7/dist-packages/camera_magnet/msg/_roboclawCmd.py
 /home/denise/catkin_ws/devel/lib/python2.7/dist-packages/camera_magnet/msg/__init__.py: /home/denise/catkin_ws/devel/lib/python2.7/dist-packages/camera_magnet/msg/_xyReal.py
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/denise/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/denise/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python msg __init__.py for camera_magnet"
 	cd /home/denise/catkin_ws/build/camera_magnet && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/hydro/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/denise/catkin_ws/devel/lib/python2.7/dist-packages/camera_magnet/msg --initpy
 
 camera_magnet_generate_messages_py: camera_magnet/CMakeFiles/camera_magnet_generate_messages_py
+camera_magnet_generate_messages_py: /home/denise/catkin_ws/devel/lib/python2.7/dist-packages/camera_magnet/msg/_roboclawCmd.py
 camera_magnet_generate_messages_py: /home/denise/catkin_ws/devel/lib/python2.7/dist-packages/camera_magnet/msg/_xyReal.py
 camera_magnet_generate_messages_py: /home/denise/catkin_ws/devel/lib/python2.7/dist-packages/camera_magnet/msg/__init__.py
 camera_magnet_generate_messages_py: camera_magnet/CMakeFiles/camera_magnet_generate_messages_py.dir/build.make

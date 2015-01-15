@@ -1,7 +1,10 @@
 # Hashes of file build rules.
+14a2430ddb1710f8a4b2d93bb447a850 /home/denise/catkin_ws/devel/include/camera_magnet/roboclawCmd.h
 a297226e0c6426b7a3501acbf286d0b6 /home/denise/catkin_ws/devel/include/camera_magnet/xyReal.h
 5aeeac52cdfe044b10b3bd7a8b67883f /home/denise/catkin_ws/devel/lib/python2.7/dist-packages/camera_magnet/msg/__init__.py
+8d9219a3503383a4594f7b9c2dbf5774 /home/denise/catkin_ws/devel/lib/python2.7/dist-packages/camera_magnet/msg/_roboclawCmd.py
 072a550c176a4c158001f89622299db0 /home/denise/catkin_ws/devel/lib/python2.7/dist-packages/camera_magnet/msg/_xyReal.py
+21dccdc0c067984fb7ac4b815711da0b /home/denise/catkin_ws/devel/share/common-lisp/ros/camera_magnet/msg/roboclawCmd.lisp
 bb5c843b0b9bed5c9b162aafdf8e9f93 /home/denise/catkin_ws/devel/share/common-lisp/ros/camera_magnet/msg/xyReal.lisp
 4f8bf8f7bce8adfc092e83457d17857f CMakeFiles/clean_test_results
 38f9386ac977b17c813222ecc6069f6b CMakeFiles/doxygen

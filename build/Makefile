@@ -355,6 +355,32 @@ std_msgs_generate_messages_py/fast:
 .PHONY : std_msgs_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named cal_magnet_track
+
+# Build rule for target.
+cal_magnet_track: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cal_magnet_track
+.PHONY : cal_magnet_track
+
+# fast build rule for target.
+cal_magnet_track/fast:
+	$(MAKE) -f camera_magnet/CMakeFiles/cal_magnet_track.dir/build.make camera_magnet/CMakeFiles/cal_magnet_track.dir/build
+.PHONY : cal_magnet_track/fast
+
+#=============================================================================
+# Target rules for targets named camera_magnet
+
+# Build rule for target.
+camera_magnet: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 camera_magnet
+.PHONY : camera_magnet
+
+# fast build rule for target.
+camera_magnet/fast:
+	$(MAKE) -f camera_magnet/CMakeFiles/camera_magnet.dir/build.make camera_magnet/CMakeFiles/camera_magnet.dir/build
+.PHONY : camera_magnet/fast
+
+#=============================================================================
 # Target rules for targets named camera_magnet_gencpp
 
 # Build rule for target.
@@ -589,6 +615,19 @@ sensor_msgs_generate_messages_py/fast:
 .PHONY : sensor_msgs_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named testcal_magnet_track
+
+# Build rule for target.
+testcal_magnet_track: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testcal_magnet_track
+.PHONY : testcal_magnet_track
+
+# fast build rule for target.
+testcal_magnet_track/fast:
+	$(MAKE) -f camera_magnet/CMakeFiles/testcal_magnet_track.dir/build.make camera_magnet/CMakeFiles/testcal_magnet_track.dir/build
+.PHONY : testcal_magnet_track/fast
+
+#=============================================================================
 # Target rules for targets named flea
 
 # Build rule for target.
@@ -656,6 +695,8 @@ help:
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_py"
+	@echo "... cal_magnet_track"
+	@echo "... camera_magnet"
 	@echo "... camera_magnet_gencpp"
 	@echo "... camera_magnet_generate_messages"
 	@echo "... camera_magnet_generate_messages_cpp"
@@ -674,6 +715,7 @@ help:
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_py"
+	@echo "... testcal_magnet_track"
 	@echo "... flea"
 	@echo "... flea_ros_color_server"
 	@echo "... flea_ros_server"

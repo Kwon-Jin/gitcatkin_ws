@@ -21,9 +21,17 @@ using namespace std;
 using namespace cv;
 
 static const std::string OPENCV_WINDOW = "Image window";
-
+/*)
+int ymin;
+int ymax;
+int xmin;
+int xmax;
+double L;
+*/
 /* magnet_track.cpp : Subscribes to '/camera/image_raw', uses simpleblobdetector to identify magnet.
 publishes vector x,y-posn in camera coordinates of magnets to xyReal
+- run cal_magnet_track.cpp got calibration a
+- calibration values stored in cal.yml (in devel/lib/camera_magnet)
 TO ADD: 
   - calibration at the beginning of script to identify ROI
   - mask using calibration ROI
@@ -38,6 +46,12 @@ class ImageConverter
   image_transport::Subscriber image_sub_;
   image_transport::Publisher image_pub_;
   ros::Publisher xyMagnet_pub_;
+  int ymin;
+  int ymax;
+  int xmin;
+  int xmax;
+  double L;
+  double mperpix;
 public:
   ImageConverter()
     : it_(nh_)
@@ -50,6 +64,30 @@ public:
     //publish vector of magnet positions
     xyMagnet_pub_ = nh_.advertise<camera_magnet::xyReal>("/magnet_track/xyReal",1);
     
+    FileStorage fs("cal.yml", FileStorage::READ);
+    ymin = (int)fs["ymin"];
+    ymax = (int)fs["ymax"];
+    xmin = (int)fs["xmin"];
+    xmax = (int)fs["xmax"];
+    L = (double)fs["L"];
+    mperpix = L/(xmax-xmin);
+
+    cout<< "ylim: " << ymin << " " << ymax << endl;
+    cout<< "xlim: " << xmin << " " << xmax << endl;
+    cout<< "L: " << L << endl;
+    cout<< "mperpix: " << mperpix << endl;
+    
+    // read YAML file
+    //FileStorage fs("cal.yml", FileStorage::READ);
+    //int ymin = (int)fs["ymin"];
+    //int ymax = (int)fs["ymax"];
+    //int xmin = (int)fs["xmin"];
+    //int xmax = (int)fs["xmax"];
+    //double L = (double)fs["L"];
+  
+    //cout<< "ymin: " << ymin << endl;
+    waitKey(0);
+
     cv::namedWindow(OPENCV_WINDOW);
   }
 
@@ -68,7 +106,7 @@ public:
     cv_bridge::CvImagePtr cv_ptr;
     try
     {
-      cv_ptr = cv_bridge::toCvCopy(msg, sensor_msgs::image_encodings::MONO8);
+      cv_ptr = cv_bridge::toCvCopy(msg, sensor_msgs::image_encodings::RGB8);
     }
     catch (cv_bridge::Exception& e)
     {
@@ -81,10 +119,10 @@ public:
     // blob detector parameters
     cv::SimpleBlobDetector::Params params;
     params.minThreshold = 0;
-    params.maxThreshold = 50;
-    params.thresholdStep = 10;
+    params.maxThreshold = 30;
+    params.thresholdStep = 5;
 
-    params.minArea = 20; 
+    params.minArea = 80; 
     params.minConvexity = 0.8;
     params.minInertiaRatio = 0.01;
 
@@ -113,11 +151,9 @@ public:
     int count = 0;
 
     // cycle through keypoints
-    for (int i=0; i<keypoints.size(); i++){ 
+    for (int i=0; i<keypoints.size(); i++){
       // determine which keypoints are magnets as filtered by posn
-      int ymin = 300;
-      int ymax = 310;
-
+      //cout<< "ymin: " << ymin << "," << ymax << endl;
       if (keypoints[i].pt.y < ymax && keypoints[i].pt.y > ymin)
       {
       // candidate keypoints for magnet
@@ -159,15 +195,15 @@ public:
     else{
       // check which is left and which is right
       if (keypoints[midx[0]].pt.x > keypoints[midx[1]].pt.x){
-        xymsg.leftx = keypoints[midx[1]].pt.x;
+        xymsg.leftx = (keypoints[midx[1]].pt.x - xmin) * mperpix;
         xymsg.lefty = keypoints[midx[1]].pt.y;
-        xymsg.rightx = keypoints[midx[0]].pt.x;
+        xymsg.rightx = (keypoints[midx[0]].pt.x - xmin) * mperpix;
         xymsg.righty = keypoints[midx[0]].pt.y;
       }
       else{
-        xymsg.leftx = keypoints[midx[0]].pt.x;
+        xymsg.leftx = (keypoints[midx[0]].pt.x - xmin) * mperpix;
         xymsg.lefty = keypoints[midx[0]].pt.y;
-        xymsg.rightx = keypoints[midx[1]].pt.x;
+        xymsg.rightx = (keypoints[midx[1]].pt.x - xmin) * mperpix;
         xymsg.righty = keypoints[midx[1]].pt.y;      
       }
     }
