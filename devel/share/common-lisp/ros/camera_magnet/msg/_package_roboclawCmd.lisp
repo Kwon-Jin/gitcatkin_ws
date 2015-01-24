@@ -5,4 +5,8 @@
           M1
           M2-VAL
           M2
+          X1DES-VAL
+          X1DES
+          X2DES-VAL
+          X2DES
 ))

@@ -7,7 +7,7 @@ import struct
 import std_msgs.msg
 
 class roboclawCmd(genpy.Message):
-  _md5sum = "3b502cf988dc44eb96945a6077f0175e"
+  _md5sum = "aa305f06e458a2bc9349c21cb907612f"
   _type = "camera_magnet/roboclawCmd"
   _has_header = True #flag to mark the presence of a Header object
   _full_text = """# Current command sent to roboclaw with timestamp
@@ -15,6 +15,8 @@ class roboclawCmd(genpy.Message):
 Header header
 int16 m1
 int16 m2
+float64 x1des
+float64 x2des
 
 ================================================================================
 MSG: std_msgs/Header
@@ -35,8 +37,8 @@ time stamp
 string frame_id
 
 """
-  __slots__ = ['header','m1','m2']
-  _slot_types = ['std_msgs/Header','int16','int16']
+  __slots__ = ['header','m1','m2','x1des','x2des']
+  _slot_types = ['std_msgs/Header','int16','int16','float64','float64']
 
   def __init__(self, *args, **kwds):
     """
@@ -46,7 +48,7 @@ string frame_id
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       header,m1,m2
+       header,m1,m2,x1des,x2des
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -61,10 +63,16 @@ string frame_id
         self.m1 = 0
       if self.m2 is None:
         self.m2 = 0
+      if self.x1des is None:
+        self.x1des = 0.
+      if self.x2des is None:
+        self.x2des = 0.
     else:
       self.header = std_msgs.msg.Header()
       self.m1 = 0
       self.m2 = 0
+      self.x1des = 0.
+      self.x2des = 0.
 
   def _get_types(self):
     """
@@ -87,7 +95,7 @@ string frame_id
         length = len(_x)
       buff.write(struct.pack('<I%ss'%length, length, _x))
       _x = self
-      buff.write(_struct_2h.pack(_x.m1, _x.m2))
+      buff.write(_struct_2h2d.pack(_x.m1, _x.m2, _x.x1des, _x.x2des))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(_x))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(_x))))
 
@@ -115,8 +123,8 @@ string frame_id
         self.header.frame_id = str[start:end]
       _x = self
       start = end
-      end += 4
-      (_x.m1, _x.m2,) = _struct_2h.unpack(str[start:end])
+      end += 20
+      (_x.m1, _x.m2, _x.x1des, _x.x2des,) = _struct_2h2d.unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
@@ -138,7 +146,7 @@ string frame_id
         length = len(_x)
       buff.write(struct.pack('<I%ss'%length, length, _x))
       _x = self
-      buff.write(_struct_2h.pack(_x.m1, _x.m2))
+      buff.write(_struct_2h2d.pack(_x.m1, _x.m2, _x.x1des, _x.x2des))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(_x))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(_x))))
 
@@ -167,12 +175,12 @@ string frame_id
         self.header.frame_id = str[start:end]
       _x = self
       start = end
-      end += 4
-      (_x.m1, _x.m2,) = _struct_2h.unpack(str[start:end])
+      end += 20
+      (_x.m1, _x.m2, _x.x1des, _x.x2des,) = _struct_2h2d.unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
 
 _struct_I = genpy.struct_I
+_struct_2h2d = struct.Struct("<2h2d")
 _struct_3I = struct.Struct("<3I")
-_struct_2h = struct.Struct("<2h")

@@ -602,6 +602,7 @@ camera_magnet/all: camera_magnet/CMakeFiles/magnet_track.dir/all
 camera_magnet/all: camera_magnet/CMakeFiles/post_magnetcontourellipse.dir/all
 camera_magnet/all: camera_magnet/CMakeFiles/post_magnettrack_files.dir/all
 camera_magnet/all: camera_magnet/CMakeFiles/testcal_magnet_track.dir/all
+camera_magnet/all: camera_magnet/CMakeFiles/visualization.dir/all
 .PHONY : camera_magnet/all
 
 # Convenience name for "clean" pass in the directory.
@@ -626,6 +627,7 @@ camera_magnet/clean: camera_magnet/CMakeFiles/sensor_msgs_generate_messages_cpp.
 camera_magnet/clean: camera_magnet/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
 camera_magnet/clean: camera_magnet/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
 camera_magnet/clean: camera_magnet/CMakeFiles/testcal_magnet_track.dir/clean
+camera_magnet/clean: camera_magnet/CMakeFiles/visualization.dir/clean
 .PHONY : camera_magnet/clean
 
 # Convenience name for "preinstall" pass in the directory.
@@ -737,9 +739,9 @@ clean: camera_magnet/CMakeFiles/camera_magnet_gencpp.dir/clean
 # Target rules for target camera_magnet/CMakeFiles/camera_magnet_generate_messages.dir
 
 # All Build rule for target.
-camera_magnet/CMakeFiles/camera_magnet_generate_messages.dir/all: camera_magnet/CMakeFiles/camera_magnet_generate_messages_py.dir/all
-camera_magnet/CMakeFiles/camera_magnet_generate_messages.dir/all: camera_magnet/CMakeFiles/camera_magnet_generate_messages_cpp.dir/all
 camera_magnet/CMakeFiles/camera_magnet_generate_messages.dir/all: camera_magnet/CMakeFiles/camera_magnet_generate_messages_lisp.dir/all
+camera_magnet/CMakeFiles/camera_magnet_generate_messages.dir/all: camera_magnet/CMakeFiles/camera_magnet_generate_messages_cpp.dir/all
+camera_magnet/CMakeFiles/camera_magnet_generate_messages.dir/all: camera_magnet/CMakeFiles/camera_magnet_generate_messages_py.dir/all
 	$(MAKE) -f camera_magnet/CMakeFiles/camera_magnet_generate_messages.dir/build.make camera_magnet/CMakeFiles/camera_magnet_generate_messages.dir/depend
 	$(MAKE) -f camera_magnet/CMakeFiles/camera_magnet_generate_messages.dir/build.make camera_magnet/CMakeFiles/camera_magnet_generate_messages.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/denise/catkin_ws/build/CMakeFiles 
@@ -1319,6 +1321,41 @@ camera_magnet/CMakeFiles/testcal_magnet_track.dir/clean:
 
 # clean rule for target.
 clean: camera_magnet/CMakeFiles/testcal_magnet_track.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target camera_magnet/CMakeFiles/visualization.dir
+
+# All Build rule for target.
+camera_magnet/CMakeFiles/visualization.dir/all: camera_magnet/CMakeFiles/camera_magnet.dir/all
+	$(MAKE) -f camera_magnet/CMakeFiles/visualization.dir/build.make camera_magnet/CMakeFiles/visualization.dir/depend
+	$(MAKE) -f camera_magnet/CMakeFiles/visualization.dir/build.make camera_magnet/CMakeFiles/visualization.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/denise/catkin_ws/build/CMakeFiles  23
+	@echo "Built target visualization"
+.PHONY : camera_magnet/CMakeFiles/visualization.dir/all
+
+# Include target in all.
+all: camera_magnet/CMakeFiles/visualization.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+camera_magnet/CMakeFiles/visualization.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/denise/catkin_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 camera_magnet/CMakeFiles/visualization.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/denise/catkin_ws/build/CMakeFiles 0
+.PHONY : camera_magnet/CMakeFiles/visualization.dir/rule
+
+# Convenience name for target.
+visualization: camera_magnet/CMakeFiles/visualization.dir/rule
+.PHONY : visualization
+
+# clean rule for target.
+camera_magnet/CMakeFiles/visualization.dir/clean:
+	$(MAKE) -f camera_magnet/CMakeFiles/visualization.dir/build.make camera_magnet/CMakeFiles/visualization.dir/clean
+.PHONY : camera_magnet/CMakeFiles/visualization.dir/clean
+
+# clean rule for target.
+clean: camera_magnet/CMakeFiles/visualization.dir/clean
 .PHONY : clean
 
 #=============================================================================

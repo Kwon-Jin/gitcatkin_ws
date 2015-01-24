@@ -240,6 +240,7 @@ SET(CMAKE_DEPEND_INFO_FILES
   "camera_magnet/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/DependInfo.cmake"
   "camera_magnet/CMakeFiles/sensor_msgs_generate_messages_py.dir/DependInfo.cmake"
   "camera_magnet/CMakeFiles/testcal_magnet_track.dir/DependInfo.cmake"
+  "camera_magnet/CMakeFiles/visualization.dir/DependInfo.cmake"
   "flea_ros/CMakeFiles/flea.dir/DependInfo.cmake"
   "flea_ros/CMakeFiles/flea_ros_color_server.dir/DependInfo.cmake"
   "flea_ros/CMakeFiles/flea_ros_server.dir/DependInfo.cmake"

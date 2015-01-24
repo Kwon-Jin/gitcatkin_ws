@@ -60,12 +60,16 @@ struct roboclawCmd_
   roboclawCmd_()
     : header()
     , m1(0)
-    , m2(0)  {
+    , m2(0)
+    , x1des(0.0)
+    , x2des(0.0)  {
     }
   roboclawCmd_(const ContainerAllocator& _alloc)
     : header(_alloc)
     , m1(0)
-    , m2(0)  {
+    , m2(0)
+    , x1des(0.0)
+    , x2des(0.0)  {
     }
 
 
@@ -78,6 +82,12 @@ struct roboclawCmd_
 
    typedef int16_t _m2_type;
   _m2_type m2;
+
+   typedef double _x1des_type;
+  _x1des_type x1des;
+
+   typedef double _x2des_type;
+  _x2des_type x2des;
 
 
 
@@ -157,12 +167,12 @@ struct MD5Sum< ::camera_magnet::roboclawCmd_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "3b502cf988dc44eb96945a6077f0175e";
+    return "aa305f06e458a2bc9349c21cb907612f";
   }
 
   static const char* value(const ::camera_magnet::roboclawCmd_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x3b502cf988dc44ebULL;
-  static const uint64_t static_value2 = 0x96945a6077f0175eULL;
+  static const uint64_t static_value1 = 0xaa305f06e458a2bcULL;
+  static const uint64_t static_value2 = 0x9349c21cb907612fULL;
 };
 
 template<class ContainerAllocator>
@@ -186,6 +196,8 @@ struct Definition< ::camera_magnet::roboclawCmd_<ContainerAllocator> >
 Header header\n\
 int16 m1\n\
 int16 m2\n\
+float64 x1des\n\
+float64 x2des\n\
 \n\
 ================================================================================\n\
 MSG: std_msgs/Header\n\
@@ -225,6 +237,8 @@ namespace serialization
       stream.next(m.header);
       stream.next(m.m1);
       stream.next(m.m2);
+      stream.next(m.x1des);
+      stream.next(m.x2des);
     }
 
     ROS_DECLARE_ALLINONE_SERIALIZER;
@@ -250,6 +264,10 @@ struct Printer< ::camera_magnet::roboclawCmd_<ContainerAllocator> >
     Printer<int16_t>::stream(s, indent + "  ", v.m1);
     s << indent << "m2: ";
     Printer<int16_t>::stream(s, indent + "  ", v.m2);
+    s << indent << "x1des: ";
+    Printer<double>::stream(s, indent + "  ", v.x1des);
+    s << indent << "x2des: ";
+    Printer<double>::stream(s, indent + "  ", v.x2des);
   }
 };
 

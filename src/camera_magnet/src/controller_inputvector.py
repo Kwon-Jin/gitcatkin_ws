@@ -128,11 +128,16 @@ def computecurrent(x1,x2,gainx): #
    A[0,1] = 3*mu/2 * (x1-L)*u0*math.pow(R,2)/math.pow(math.pow(x1-L,2) + math.pow(R,2),(2.5));
    A[1,0] = -3*mu/2 * (x2*u0*math.pow(R,2))/math.pow(math.pow(x2,2) + math.pow(R,2),(2.5));
    A[1,1] = -3*mu/2 * (x2-L)*u0*math.pow(R,2)/math.pow(math.pow(x2-L,2) + math.pow(R,2),(2.5));
-
+   Fmag = -u0*math.pow(m,2)/(4*PI)*numpy.array([[-math.pow((x2-x1),-2)],[math.pow(x2-x1,-2)]]) ;
    b = - u0*math.pow(m,2)/(4*PI)*numpy.array([[-math.pow((x2-x1),-2)],[math.pow(x2-x1,-2)]]) + gainx;
+   print('gainx:')
+   print gainx
+   print('Fmag:')
+   print Fmag
    I = numpy.linalg.solve(A,b);
    # set limits to +/- 512 and round to integer value
    I[numpy.nonzero(numpy.absolute(I)>512),:] = numpy.copysign(512,I[numpy.nonzero(numpy.absolute(I)>512),:])
+
    I = numpy.around(I,decimals=0)
    return I
 
@@ -146,8 +151,22 @@ def callback(data):
     global m2val
     global xl 
     global xr
-    xl = float(data.leftx);
-    xr = float(data.rightx);
+    xlnew = float(data.leftx);
+    xrnew = float(data.rightx);
+
+    if(numpy.absolute(xlnew-xl) < 0.02):
+        xl = xlnew;
+    #else:
+    	#print('invalid x1, not updated')
+
+    if(numpy.absolute(xrnew-xr) < 0.02):
+        xr = xrnew;
+    #else:
+    	#print('invalid x2, not updated')
+
+
+
+
     xlcm = xl * 100;
     xrcm = xr * 100;
     #print 'leftx: {0:.3f} cm, rightx: {1:.3f} cm.'.format(xlcm, xrcm)
@@ -160,7 +179,7 @@ def callback(data):
 def talker():
 	# publishing to roboclawcommand topic
     #pub = rospy.Publisher('roboclawcommand',roboclawCmd, queue_size = 10)
-    pub = rospy.Publisher('/magnet_track/roboclawCmd', roboclawCmd, queue_size=10)
+    pub = rospy.Publisher('/controller_inputvector/roboclawCmd', roboclawCmd, queue_size=10)
     #rospy.init_node('talker',anonymous=True)
     rate = rospy.Rate(5) #Hz
     msg = roboclawCmd();
@@ -168,6 +187,7 @@ def talker():
     while not rospy.is_shutdown():
         #hello_str = "hello world %s" % rospy.get_time()
 
+        #desired values
         x1 = x1all[0,i]
         x2 = x2all[0,i]
         
@@ -176,8 +196,8 @@ def talker():
         xdiff2 = x2-xr 
         print 'xdiff1: {0:.2f}, xdiff2: {1:.2f}.'.format(xdiff1*100,xdiff2*100)
 
-        gainx = numpy.array([[0],[0]])
-        gainx = numpy.array([[.01],[.01]]) * numpy.array([[xdiff1],[xdiff2]])
+        #gainx = numpy.array([[0],[0]])
+        gainx = numpy.array([[0.04],[0.04]]) * numpy.array([[xdiff1],[xdiff2]])
         #print(gainx)
         I = computecurrent(x1,x2,gainx)
         print(I)
@@ -190,33 +210,15 @@ def talker():
         m2val = int(I[1])
         msg.m1 = m1val;
         msg.m2 = m2val;
+        msg.x1des = x1;
+        msg.x2des = x2;
+
         SetM1DutyAccel(1500,m1val)
         SetM2DutyAccel(1500,m2val)
-        rospy.loginfo(msg);
+        #rospy.loginfo(msg);
         pub.publish(msg);
 
         rate.sleep()
-
-
-def motorupdate():
-    global m1val
-    global m2val
-    # compute gainx
-
-
-    rate = rospy.Rate(75)
-    
-    i = 0;
-    #for i in range(len(x1all)):
-    while not rospy.is_shutdown():
-    	# compute I
-
-
-
-    	# assign velocity
-
-	    rate.sleep()
-
 
 def listener():
 
@@ -252,7 +254,8 @@ if __name__ == '__main__':
    SetM1DutyAccel(1500,-512)
    SetM2DutyAccel(1500,512)
 	# load csv of x1,x2 values
-   filename = 'trajoscillate5.dat'
+   #$filename = 'traj5sec5hz_b.dat'
+   filename = 'lr5sec5hz.dat'
    with open(filename,'rb') as f:
    
    		reader = csv.reader(f, delimiter = ',')
@@ -272,9 +275,9 @@ if __name__ == '__main__':
    			#print("x1: " + x1all[0,idx] ) #" x2:" + x2)
 	
 			idx = idx + 1
-   SetM1DutyAccel(1500,512)
-   SetM2DutyAccel(1500,-512)
+   SetM1DutyAccel(1500,198)
+   SetM2DutyAccel(1500,-73)
    xl = x1all[0,0]
    xr = x2all[0,0]
-   time.sleep(0)
+   time.sleep(5)
    listener()

@@ -155,6 +155,12 @@ target_link_libraries(testcal_magnet_track
   camera_magnet
 )
 
+add_executable(visualization src/visualization.cpp)
+target_link_libraries(visualization
+  ${catkin_LIBRARIES}
+  camera_magnet
+)
+
 
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes

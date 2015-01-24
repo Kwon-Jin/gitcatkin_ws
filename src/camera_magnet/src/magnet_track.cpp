@@ -21,6 +21,8 @@ using namespace std;
 using namespace cv;
 
 static const std::string OPENCV_WINDOW = "Image window";
+
+
 /*)
 int ymin;
 int ymax;
@@ -52,19 +54,26 @@ class ImageConverter
   int xmax;
   double L;
   double mperpix;
+  bool visualize;
+
 public:
   ImageConverter()
-    : it_(nh_)
+    :nh_("~") ,it_(nh_)
   {
     // Subscribe to input video feed and publish output video feed
     image_sub_ = it_.subscribe("/camera/image_raw", 1, 
       &ImageConverter::imageCb, this);
-    image_pub_ = it_.advertise("/magnet_track/output_video", 1);
+    // image_pub_ = it_.advertise("/magnet_track/output_video", 1);
+    image_pub_ = it_.advertise("output_video", 1);
 
     //publish vector of magnet positions
-    xyMagnet_pub_ = nh_.advertise<camera_magnet::xyReal>("/magnet_track/xyReal",1);
+    xyMagnet_pub_ = nh_.advertise<camera_magnet::xyReal>("xyReal",1);
     
-    FileStorage fs("cal.yml", FileStorage::READ);
+    std::string cal_file;
+    // nh_.param("/magnet_track/calib_file", cal_file, std::string("cal.yml"));
+    nh_.param("calib_file", cal_file, std::string("cal.yml"));
+    ROS_INFO_STREAM("calib file " << cal_file);
+    FileStorage fs(cal_file.c_str(), FileStorage::READ);
     ymin = (int)fs["ymin"];
     ymax = (int)fs["ymax"];
     xmin = (int)fs["xmin"];
@@ -76,6 +85,7 @@ public:
     cout<< "xlim: " << xmin << " " << xmax << endl;
     cout<< "L: " << L << endl;
     cout<< "mperpix: " << mperpix << endl;
+    visualize = 1;
     
     // read YAML file
     //FileStorage fs("cal.yml", FileStorage::READ);
@@ -88,7 +98,8 @@ public:
     //cout<< "ymin: " << ymin << endl;
     waitKey(0);
 
-    cv::namedWindow(OPENCV_WINDOW);
+    if(visualize)
+      cv::namedWindow(OPENCV_WINDOW);
   }
 
   ~ImageConverter()
@@ -118,9 +129,9 @@ public:
     // Live track magnets using simpleblobdetector
     // blob detector parameters
     cv::SimpleBlobDetector::Params params;
-    params.minThreshold = 0;
-    params.maxThreshold = 30;
-    params.thresholdStep = 5;
+    params.minThreshold = 10;
+    params.maxThreshold = 50;
+    params.thresholdStep = 2;
 
     params.minArea = 80; 
     params.minConvexity = 0.8;
@@ -165,10 +176,12 @@ public:
       Point pt;
       pt.x = keypoints[i].pt.x; 
       pt.y = keypoints[i].pt.y; 
-      circle( cv_ptr->image, pt , 10 , CV_RGB(0,0,255), 3 , -1 );
+      if (visualize)
+        circle( cv_ptr->image, pt , 10 , CV_RGB(0,0,255), 3 , -1 );
       }
     }
-    drawKeypoints( cv_ptr->image, keypoints,  cv_ptr->image, CV_RGB(0,255,0), DrawMatchesFlags::DRAW_RICH_KEYPOINTS);
+    if (visualize)
+      drawKeypoints( cv_ptr->image, keypoints,  cv_ptr->image, CV_RGB(0,255,0), DrawMatchesFlags::DRAW_RICH_KEYPOINTS);
     
     //cout << " ==tb==== " << endl;
     cout << "midx : " << midx[0] << "  " << midx[1] << endl;
@@ -179,12 +192,12 @@ public:
     
     // Update GUI Window
     //cv::imshow(OPENCV_WINDOW, cv_ptr->image);
-    cv::imshow(OPENCV_WINDOW,  cv_ptr->image);
-
-    cv::waitKey(3);
-
-    // Output modified video stream
-    image_pub_.publish(cv_ptr->toImageMsg());
+    if (visualize){
+      cv::imshow(OPENCV_WINDOW,  cv_ptr->image);
+      cv::waitKey(3);
+      // Output modified video stream
+      image_pub_.publish(cv_ptr->toImageMsg());
+    }
     
 
     // package position for xyReal.msg:
@@ -196,15 +209,15 @@ public:
       // check which is left and which is right
       if (keypoints[midx[0]].pt.x > keypoints[midx[1]].pt.x){
         xymsg.leftx = (keypoints[midx[1]].pt.x - xmin) * mperpix;
-        xymsg.lefty = keypoints[midx[1]].pt.y;
+        xymsg.lefty = (keypoints[midx[1]].pt.y - ymin) * mperpix;
         xymsg.rightx = (keypoints[midx[0]].pt.x - xmin) * mperpix;
-        xymsg.righty = keypoints[midx[0]].pt.y;
+        xymsg.righty = (keypoints[midx[0]].pt.y - ymin) * mperpix;
       }
       else{
         xymsg.leftx = (keypoints[midx[0]].pt.x - xmin) * mperpix;
-        xymsg.lefty = keypoints[midx[0]].pt.y;
+        xymsg.lefty = (keypoints[midx[0]].pt.y - ymin) * mperpix;
         xymsg.rightx = (keypoints[midx[1]].pt.x - xmin) * mperpix;
-        xymsg.righty = keypoints[midx[1]].pt.y;      
+        xymsg.righty = (keypoints[midx[1]].pt.y - ymin) * mperpix;      
       }
     }
     //cout<< "xleft: "<< keypoints[1].pt.x << endl;

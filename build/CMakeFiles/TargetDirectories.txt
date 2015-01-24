@@ -38,3 +38,4 @@
 /home/denise/catkin_ws/build/mbrcellcount/CMakeFiles/std_msgs_generate_messages_py.dir
 /home/denise/catkin_ws/build/camera_magnet/CMakeFiles/testcal_magnet_track.dir
 /home/denise/catkin_ws/build/CMakeFiles/tests.dir
+/home/denise/catkin_ws/build/camera_magnet/CMakeFiles/visualization.dir

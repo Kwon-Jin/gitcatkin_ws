@@ -440,6 +440,20 @@ testcal_magnet_track/fast:
 	cd /home/denise/catkin_ws/build && $(MAKE) -f camera_magnet/CMakeFiles/testcal_magnet_track.dir/build.make camera_magnet/CMakeFiles/testcal_magnet_track.dir/build
 .PHONY : testcal_magnet_track/fast
 
+# Convenience name for target.
+camera_magnet/CMakeFiles/visualization.dir/rule:
+	cd /home/denise/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 camera_magnet/CMakeFiles/visualization.dir/rule
+.PHONY : camera_magnet/CMakeFiles/visualization.dir/rule
+
+# Convenience name for target.
+visualization: camera_magnet/CMakeFiles/visualization.dir/rule
+.PHONY : visualization
+
+# fast build rule for target.
+visualization/fast:
+	cd /home/denise/catkin_ws/build && $(MAKE) -f camera_magnet/CMakeFiles/visualization.dir/build.make camera_magnet/CMakeFiles/visualization.dir/build
+.PHONY : visualization/fast
+
 src/cal_magnet_track.o: src/cal_magnet_track.cpp.o
 .PHONY : src/cal_magnet_track.o
 
@@ -632,6 +646,30 @@ src/testcal_magnet_track.cpp.s:
 	cd /home/denise/catkin_ws/build && $(MAKE) -f camera_magnet/CMakeFiles/testcal_magnet_track.dir/build.make camera_magnet/CMakeFiles/testcal_magnet_track.dir/src/testcal_magnet_track.cpp.s
 .PHONY : src/testcal_magnet_track.cpp.s
 
+src/visualization.o: src/visualization.cpp.o
+.PHONY : src/visualization.o
+
+# target to build an object file
+src/visualization.cpp.o:
+	cd /home/denise/catkin_ws/build && $(MAKE) -f camera_magnet/CMakeFiles/visualization.dir/build.make camera_magnet/CMakeFiles/visualization.dir/src/visualization.cpp.o
+.PHONY : src/visualization.cpp.o
+
+src/visualization.i: src/visualization.cpp.i
+.PHONY : src/visualization.i
+
+# target to preprocess a source file
+src/visualization.cpp.i:
+	cd /home/denise/catkin_ws/build && $(MAKE) -f camera_magnet/CMakeFiles/visualization.dir/build.make camera_magnet/CMakeFiles/visualization.dir/src/visualization.cpp.i
+.PHONY : src/visualization.cpp.i
+
+src/visualization.s: src/visualization.cpp.s
+.PHONY : src/visualization.s
+
+# target to generate assembly for a file
+src/visualization.cpp.s:
+	cd /home/denise/catkin_ws/build && $(MAKE) -f camera_magnet/CMakeFiles/visualization.dir/build.make camera_magnet/CMakeFiles/visualization.dir/src/visualization.cpp.s
+.PHONY : src/visualization.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -666,6 +704,7 @@ help:
 	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... test"
 	@echo "... testcal_magnet_track"
+	@echo "... visualization"
 	@echo "... src/cal_magnet_track.o"
 	@echo "... src/cal_magnet_track.i"
 	@echo "... src/cal_magnet_track.s"
@@ -690,6 +729,9 @@ help:
 	@echo "... src/testcal_magnet_track.o"
 	@echo "... src/testcal_magnet_track.i"
 	@echo "... src/testcal_magnet_track.s"
+	@echo "... src/visualization.o"
+	@echo "... src/visualization.i"
+	@echo "... src/visualization.s"
 .PHONY : help
 
 

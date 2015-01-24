@@ -628,6 +628,19 @@ testcal_magnet_track/fast:
 .PHONY : testcal_magnet_track/fast
 
 #=============================================================================
+# Target rules for targets named visualization
+
+# Build rule for target.
+visualization: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 visualization
+.PHONY : visualization
+
+# fast build rule for target.
+visualization/fast:
+	$(MAKE) -f camera_magnet/CMakeFiles/visualization.dir/build.make camera_magnet/CMakeFiles/visualization.dir/build
+.PHONY : visualization/fast
+
+#=============================================================================
 # Target rules for targets named flea
 
 # Build rule for target.
@@ -716,6 +729,7 @@ help:
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... testcal_magnet_track"
+	@echo "... visualization"
 	@echo "... flea"
 	@echo "... flea_ros_color_server"
 	@echo "... flea_ros_server"
